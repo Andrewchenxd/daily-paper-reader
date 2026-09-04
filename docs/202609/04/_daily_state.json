@@ -1,0 +1,25 @@
+{
+  "date": "20260904",
+  "date_label": "",
+  "generated_at": "2026-09-04 22:41:15 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2608.30760v1",
+      "route": "202609/04/2608.30760v1-practice-from-experience-to-expertise-in-self-evolving-embodied-agents",
+      "title": "PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "智能体通过经验轨迹自动生成并持久维护技能库，实现自我进化",
+      "first_seen_at": "2026-09-04 22:41:15 UTC",
+      "updated_at": "2026-09-04 22:41:15 UTC"
+    }
+  ]
+}

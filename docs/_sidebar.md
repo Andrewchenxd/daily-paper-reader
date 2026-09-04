@@ -1,6 +1,9 @@
 * <a class="dpr-sidebar-root-link" href="#/">首页</a>
 * <a class="dpr-sidebar-root-link dpr-sidebar-noactive-link" href="javascript:void(0)" data-dpr-hash="#/tutorial/README">使用教程</a>
 * Daily Papers
+  * 2026-09-04 <!--dpr-date:20260904-->
+    * 精读区
+      * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/202609/04/2608.30760v1-practice-from-experience-to-expertise-in-self-evolving-embodied-agents" data-sidebar-item="{&quot;title&quot;: &quot;PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.30760v1-practice-from-experience-to-expertise-in-self-evolving-embodied-agents&quot;, &quot;score&quot;: &quot;8.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;skill-evo&quot;}], &quot;evidence&quot;: &quot;智能体通过经验轨迹自动生成并持久维护技能库，实现自我进化&quot;}">PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents</a>
   * 2026-08-06 ~ 2026-09-04 <!--dpr-date:20260806-20260904-->
     * 精读区
       * <a class="dpr-sidebar-item-link dpr-sidebar-item-structured" href="#/20260806-20260904/2608.06153v1-learning-globally-reusable-skills-for-coding-agents" data-sidebar-item="{&quot;title&quot;: &quot;Learning Globally Reusable Skills for Coding Agents&quot;, &quot;link&quot;: &quot;https://arxiv.org/abs/2608.06153v1-learning-globally-reusable-skills-for-coding-agents&quot;, &quot;score&quot;: &quot;9.0&quot;, &quot;tags&quot;: [{&quot;kind&quot;: &quot;query&quot;, &quot;label&quot;: &quot;skill-evo&quot;}], &quot;evidence&quot;: &quot;面向代码智能体的自动化技能演化，通过关系图和聚类整合提升技能的全局可复用性&quot;}">Learning Globally Reusable Skills for Coding Agents</a>

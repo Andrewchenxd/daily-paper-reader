@@ -1,0 +1,24 @@
+{
+  "label": "2026-09-04",
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T22:41:15",
+  "count": 1,
+  "papers": [
+    {
+      "paper_id": "202609/04/2608.30760v1-practice-from-experience-to-expertise-in-self-evolving-embodied-agents",
+      "section": "deep",
+      "title_en": "PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents",
+      "authors": "Ziyi Bai, Siqi Li, Tinglei Huang, Börje F. Karlsson",
+      "date": "2026-08-31",
+      "pdf": "https://arxiv.org/pdf/2608.30760v1",
+      "score": "8.0",
+      "evidence": "智能体通过经验轨迹自动生成并持久维护技能库，实现自我进化",
+      "tldr": "为克服现有经验型具身智能体依赖人工设计提示流程抽取更新技能、难以应对多样化新经验的局限，提出PRACTICE，通过训练技能学习器从历史交互轨迹中自动发现并维护持久技能库。相比固定人工工作流，该机制让多模态大语言模型智能体能够从经验中持续习得新技能，更快适应环境，推进无需人工编码的自主技能进化。",
+      "tags": "query:skill-evo",
+      "abstract_en": "Recent studies have shown that multimodal large language models (MLLMs) can serve as embodied agents, translating language instructions and visual observations into executable plans. However, building agents that can continually improve through interaction and rapidly adapt to their environments remains challenging. Summing up experience from past interaction trajectories provides a promising solution, but existing experience-based methods often rely on manually designed prompting workflows to extract and update skills. Such fixed procedures may struggle to learn updated skills from new and diverse experiences. We introduce PRACTICE, which trains a skill learner to discover and maintain a persistent skill library from past interaction trajectories while keeping the task executor frozen. Given the historical accumulated skills and incoming trajectories, the skill learner produces structured batch-edits that add, refine, merge, or remove skills, and then hierarchical consolidate all collected edits into a consistent updated skill library. We train the learner with a two-stage curriculum. First, it learns basic skill generation and library maintenance from oracle trajectories. Then, by contrasting successful and failed trajectories from heterogeneous executors on the same tasks, it learn to identify invalid action patterns and recovery strategies. Finally, we apply online skill-edit distillation to align the skill learner with a stronger teacher on its current edit distribution to further improves the policy. Experiments demonstrate that a compact skill learner delivers consistent performance improvements across successive library-update rounds for multiple frozen executors. On EB-ALFRED and EB-Habitat, PRACTICE further outperforms the strongest experience-based baselines. Project resources are publicly available at: https://baai-agents.github.io/PRACTICE",
+      "source": "arxiv",
+      "selection_source": "carryover_cache"
+    }
+  ],
+  "errors": []
+}
