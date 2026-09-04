@@ -1,0 +1,1141 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-09-04T02:42:34.918231+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 24,
+    "deep_cap": 6,
+    "deep_selected": 17,
+    "quick_candidates": 12,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2608.06153v1",
+      "source": "arxiv",
+      "title": "Learning Globally Reusable Skills for Coding Agents",
+      "abstract": "Automated skill evolution enables Large Language Model (LLM) agents to continuously improve without expensive retraining. However, existing approaches typically treat skill evolution as a sequence of local updates, overlooking relationships among skills and often producing overfitted skill updates that fail to generalize across tasks. We propose GSE, a globalized skill evolution framework that jointly optimizes skill compatibility and skill generalization. To preserve consistency across the skill bank, GSE maintains a Skill Relation Graph (SRG) that explicitly models and co-evolves inter-skill relationships. To improve generalization, GSE performs cluster-based skill consolidation to abstract reusable capabilities from local updates and employs replay-driven verification to prevent overfitting and behavioral regressions. We evaluate GSE on two representative software engineering tasks: bug-revealing test generation and false-positive bug report filtering. Across two state-of-the-art coding agents, OpenHands and mini-SWE-agent, GSE consistently achieves the best precision, recall, and F1-score. Compared with existing evolution techniques, GSE improves precision and recall by 6.1%~34.1% and 31.8%~180.0% for test generation, and by 15.4%~96.4% and 13.1%~19.8% for false-positive filtering. Deployment on an internal industrial agent further yields a 61.4% improvement in F1-score, demonstrating the effectiveness and generalizability of GSE for evolving effective skills.",
+      "authors": [
+        "Chen Yang",
+        "Jiashuo Tian",
+        "Ziqi Wang",
+        "Xinyin Liu",
+        "Meiru Ye",
+        "Junjie Chen"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "published": "2026-08-06T15:19:56+00:00",
+      "link": "https://arxiv.org/pdf/2608.06153v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Automated globalized skill evolution framework for coding agents jointly optimizing compatibility and generalization without retraining",
+      "llm_evidence_cn": "面向代码智能体的自动化技能演化，通过关系图和聚类整合提升技能的全局可复用性",
+      "llm_evidence": "面向代码智能体的自动化技能演化，通过关系图和聚类整合提升技能的全局可复用性",
+      "canonical_evidence": "面向代码智能体的自动化技能演化，通过关系图和聚类整合提升技能的全局可复用性",
+      "llm_tldr_en": "GSE is a globalized skill-evolution framework for coding agents. It models inter-skill relations with a skill-relation graph and abstracts reusable capabilities through cluster-based consolidation and replay-driven verification, enabling retraining-free agent improvement.",
+      "llm_tldr_cn": "针对现有技能演化通常进行局部顺序更新、忽视技能间关系并产生过拟合、难以跨任务推广的缺陷，提出面向代码智能体的GSE全局技能演化框架。GSE利用技能关系图显式建模并共演化技能间关系，通过基于聚类的技能整合从局部更新中抽象可复用能力，再利用重放驱动验证保证技能库一致，使智能体能够无需昂贵重训练地持续提升。",
+      "llm_tldr": "针对现有技能演化通常进行局部顺序更新、忽视技能间关系并产生过拟合、难以跨任务推广的缺陷，提出面向代码智能体的GSE全局技能演化框架。GSE利用技能关系图显式建模并共演化技能间关系，通过基于聚类的技能整合从局部更新中抽象可复用能力，再利用重放驱动验证保证技能库一致，使智能体能够无需昂贵重训练地持续提升。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.06891v1",
+      "source": "arxiv",
+      "title": "SkillEval: Decomposing Agent Skill Quality into Interpretable Signals",
+      "abstract": "Agent skills provide reusable procedural knowledge that helps agents solve specialized tasks. As their use expands, evaluating skill quality becomes increasingly important. Existing evaluations often measure skill quality by testing whether a skill improves performance on specific downstream tasks. However, a reusable skill may apply to multiple task scenarios. Downstream evaluation mainly reflects the compatibility between a skill and the evaluated task, provides only a partial view of skill quality, and does not identify which aspect of the skill should be improved. We find that general properties of the \\texttt{SKILL.md} document play an important role in skill quality. To evaluate these properties, we propose \\textbf{SkillEval}, an interpretable framework for document-level skill evaluation. SkillEval evaluates each property using a fixed and inspectable scoring direction, producing interpretable scores. It further measures and reduces the influence of unrelated document features, such as length and formatting, so that each score captures its intended semantic property more specifically. Specifically, SkillEval learns an interpretable direction for each quality property from controlled positive--negative skill pairs in the hidden representation space of the model, and scores a new skill by projecting its representation onto these fixed directions. We use SkillEval to evaluate skills in controlled quality tests and show that SkillEval reliably distinguishes skills of different quality. In addition, SkillEval scores closely reflect downstream task performance, providing an early indication of whether a skill is likely to help an agent complete a task. We further explore SkillEval for diagnosing weaknesses in skill documents and guiding targeted revisions. The revised skills improve the targeted properties and achieve higher pass rates on downstream tasks.",
+      "authors": [
+        "Jiahui Han",
+        "Qinuo Li",
+        "Ziheng Peng",
+        "Haotian Wu",
+        "Haoze Liu",
+        "Danfeng Shan",
+        "Guanchu Wang",
+        "Huiqi Deng",
+        "Ninghao Liu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-07T07:25:17+00:00",
+      "link": "https://arxiv.org/pdf/2608.06891v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "SkillEval evaluates agent skill quality by examining general properties of SKILL.md documents, decomposing quality into interpretable signals instead of only downstream performance",
+      "llm_evidence_cn": "提出可解释的SkillEval框架，从SKILL.md文档固有属性分解技能质量信号，直接服务于生成技能的质量评测",
+      "llm_evidence": "提出可解释的SkillEval框架，从SKILL.md文档固有属性分解技能质量信号，直接服务于生成技能的质量评测",
+      "canonical_evidence": "提出可解释的SkillEval框架，从SKILL.md文档固有属性分解技能质量信号，直接服务于生成技能的质量评测",
+      "llm_tldr_en": "Agent skill quality is commonly judged by downstream task gains, which only measures compatibility with one task. SkillEval instead decomposes skill quality into interpretable signals based on the SKILL.md document itself, giving actionable improvement directions for reusable skills.",
+      "llm_tldr_cn": "Agent技能携带可复用的程序性知识，但其质量评估往往只看能否提升特定下游任务，这只能反映技能与任务的兼容性，难以指导改进。本文发现技能SKILL.md文档的一般属性显著影响质量，于是提出可解释评分框架SkillEval，把技能质量拆解为多个可解释信号。该方案摆脱对单一下游任务的依赖，能指出技能的哪个方面需要改进。为自动生成与优化技能提供了更全面、可操作的质量评价工具。",
+      "llm_tldr": "Agent技能携带可复用的程序性知识，但其质量评估往往只看能否提升特定下游任务，这只能反映技能与任务的兼容性，难以指导改进。本文发现技能SKILL.md文档的一般属性显著影响质量，于是提出可解释评分框架SkillEval，把技能质量拆解为多个可解释信号。该方案摆脱对单一下游任务的依赖，能指出技能的哪个方面需要改进。为自动生成与优化技能提供了更全面、可操作的质量评价工具。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "evaluation criteria and metrics for measuring the quality of generated skills and prompts",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.07449v1",
+      "source": "arxiv",
+      "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
+      "abstract": "LLM agents increasingly adapt to recurring tasks by accumulating procedural knowledge in skills. These skills are lightweight, reusable textual artifacts that are loaded into the agent's context without weight updates. Recent methods refine skills through iterative task execution, failure diagnosis, and trajectory-guided text-space updates. However, existing frameworks lack explicit diagnosis--outcome feedback and treat deletion as a generic edit operation rather than a dedicated mechanism for consolidating accumulated knowledge. We introduce SkillProx, a proximal-gradient-inspired forward--backward framework that couples closed-loop diagnostic evolution with utility-aware proximal refinement. Motivated by a composite objective balancing task loss and skill complexity, the forward stage re-executes diagnosis-driven edits on the same task batch, rolls back regressions, and feeds measured outcomes into subsequent diagnoses. The backward stage decomposes the resulting skill into auditable knowledge units, estimates their contributions using a frozen leave-one-out utility audit, and applies validation-gated consolidation, demotion, or removal. Experiments on in-distribution and out-of-distribution benchmarks across multiple backbone LLMs show that SkillProx improves average accuracy by 3.0 percentage points over the strongest gradient-based baseline. Component ablations demonstrate the complementary effects of closed-loop diagnosis and proximal refinement.",
+      "authors": [
+        "Mingxuan Zheng",
+        "Yujin Zhou",
+        "Chuxue Cao",
+        "Boqin Yin",
+        "Yuyao Zhang",
+        "Jiapeng Sun",
+        "Shuaishuai Gong",
+        "Sirui Han",
+        "Yike Guo"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-08-07T17:40:33+00:00",
+      "link": "https://arxiv.org/pdf/2608.07449v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Self-evolving agent skills through closed-loop diagnostic feedback and proximal textual refinement",
+      "llm_evidence_cn": "通过闭环诊断反馈与近端文本精修实现智能体技能自进化",
+      "llm_evidence": "通过闭环诊断反馈与近端文本精修实现智能体技能自进化",
+      "canonical_evidence": "通过闭环诊断反馈与近端文本精修实现智能体技能自进化",
+      "llm_tldr_en": "SkillProx introduces a proximal-gradient-inspired forward-backward framework for self-evolving agent skills, coupling closed-loop diagnostic evolution with utility-aware proximal refinement to revise textual skills without weight updates.",
+      "llm_tldr_cn": "针对技能自进化框架缺乏显式诊断结果反馈、且将删除仅作为普通编辑的问题，SkillProx提出受近端梯度启发的正反向框架，将闭环诊断式进化与效用感知的近端精修结合。技能以轻量文本形式保留在上下文中，无需权重更新。实验表明该机制能更好整合高价值技能、剔除低效用内容并提升任务表现，为智能体免人工编码的技能自我优化提供了新机制。",
+      "llm_tldr": "针对技能自进化框架缺乏显式诊断结果反馈、且将删除仅作为普通编辑的问题，SkillProx提出受近端梯度启发的正反向框架，将闭环诊断式进化与效用感知的近端精修结合。技能以轻量文本形式保留在上下文中，无需权重更新。实验表明该机制能更好整合高价值技能、剔除低效用内容并提升任务表现，为智能体免人工编码的技能自我优化提供了新机制。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.08037v1",
+      "source": "arxiv",
+      "title": "SkillSmith: Enhancing Locally Deployed Agents via Automatic Skill Construction and Evolution",
+      "abstract": "LLM-based agent frameworks now act as personal assistants for multi-step tasks. Existing agent frameworks such as OpenClaw commonly follow the Cloud Agent depolyment mode using closed-source cloud LLMs as backbone model, which may expose private user information and incur repeated LLM-calling costs. Local Agents address these deployment concerns by depolying frontier open-source SLMs on user-controlled devices, but their task effectiveness still lags far behind Cloud Agents. Through diagnostic analysis, we reveal that the limited effectiveness of Local Agents with frontier SLM backbones mainly comes from missing environment knowledge caused by limited backbone model scale including environment rules and operation procedures. To supply such knowledge non-parametrically, context-efficiently, and without expert authoring, we present SkillSmith, a Cloud--Local Agent collaboration framework that uses Skill as a context-efficient knowledge carrier, automatic constructs Skill from Cloud Agent task exploration and evolves Skill using Local Agent execution feedback to enhance a frozen Local Agent. Experiments on daily agent task datasets AppWorld and WorkBench show that the automatically generated Skill enables the Local Agent with Qwen3.6-27B(SLM) to achieve task effectiveness comparable to Cloud Agents with frontier LLMs, outperform the strongest non-parametric baselines, reduce average actions per task from 36.1 to 9.9 on AppWorld-Normal, and generalize to other SLM backbone models without rerunning Skill construction.",
+      "authors": [
+        "Xinle Jiang",
+        "Remy Xie",
+        "Ming Tang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-08T09:48:21+00:00",
+      "link": "https://arxiv.org/pdf/2608.08037v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Automatic skill construction and evolution for agent systems directly matches the required automatic evolution of agent skills.",
+      "llm_evidence_cn": "面向智能体系统自动构造并进化技能，直接命中agent技能自动演进需求。",
+      "llm_evidence": "面向智能体系统自动构造并进化技能，直接命中agent技能自动演进需求。",
+      "canonical_evidence": "面向智能体系统自动构造并进化技能，直接命中agent技能自动演进需求。",
+      "llm_tldr_en": "Local agents with small open-source models underperform cloud agents due to missing environment knowledge. SkillSmith automatically constructs and evolves skill repositories containing environment rules and operation procedures. This enhances locally deployed agents and directly demonstrates automatic skill construction and evolution without human manual coding.",
+      "llm_tldr_cn": "本地部署的开放小模型智能体在任务效果上明显落后于云端大模型智能体，诊断表明问题主要来自环境规则与操作知识的缺失。SkillSmith面向本地agent自动构建技能库，并通过持续进化使技能适应环境与任务。实验显示该方法能显著提高本地SLM智能体的多步任务效果。它直接在开源模型受限场景下实现了技能自动构建与进化。",
+      "llm_tldr": "本地部署的开放小模型智能体在任务效果上明显落后于云端大模型智能体，诊断表明问题主要来自环境规则与操作知识的缺失。SkillSmith面向本地agent自动构建技能库，并通过持续进化使技能适应环境与任务。实验显示该方法能显著提高本地SLM智能体的多步任务效果。它直接在开源模型受限场景下实现了技能自动构建与进化。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.08677v1",
+      "source": "arxiv",
+      "title": "Branch2Skill: Efficient Skill Evolution Through Reasoning Trees",
+      "abstract": "Skill evolution improves agent skills through feedback over time, with failed trajectories often providing informative signals by revealing incomplete or misleading behaviors. However, existing methods mainly rely on single trajectories, where early reasoning errors can propagate through subsequent steps and weaken the feedback available for skill refinement. Consequently, improving skills requires repeated cycles of rollout, diagnosis, and update, incurring substantial token costs. To address this challenge, we introduce Branch2Skill, an efficient framework that transforms a single reasoning tree into dense supervision for skill evolution. For each task or problem, Branch2Skill performs Monte Carlo tree search under a fixed budget to obtain diverse reasoning trajectories, then compares an elite path with sibling alternatives sharing the same prefixes to extract step-wise evidence about which reasoning patterns to retain, revise, or avoid. Finally, Branch2Skill distills multi-step evidence into reusable updates, allowing one reasoning tree to provide supervision across multiple reasoning steps and reducing the need for repeated rollout-update cycles. Across six benchmarks covering reasoning and agentic tasks, Branch2Skill consistently improves task performance while enhancing skill evolution efficiency. For example, with GPT 5.5 as the target model, Branch2Skill uses 73.2% fewer tokens than SkillOpt, while achieving superior performance. These results demonstrate that reasoning trees can support not only more effective trajectory search, but also richer supervision for more efficient skill improvement. Code will be published.",
+      "authors": [
+        "Yanwei Ren",
+        "Haotian Zhang",
+        "Likang Xiao",
+        "Jiaxing Huang",
+        "Jiayan Qiu",
+        "Baosheng Yu",
+        "Quan Chen",
+        "Liu Liu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-09T12:48:10+00:00",
+      "link": "https://arxiv.org/pdf/2608.08677v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Branch2Skill converts one reasoning tree from Monte Carlo search into dense feedback signals for refining agent skills based on failure trajectories",
+      "llm_evidence_cn": "利用蒙特卡洛树搜索得到的推理树生成密集监督，从失败轨迹反馈中高效改进技能，直接回答智能体如何利用反馈自进化",
+      "llm_evidence": "利用蒙特卡洛树搜索得到的推理树生成密集监督，从失败轨迹反馈中高效改进技能，直接回答智能体如何利用反馈自进化",
+      "canonical_evidence": "利用蒙特卡洛树搜索得到的推理树生成密集监督，从失败轨迹反馈中高效改进技能，直接回答智能体如何利用反馈自进化",
+      "llm_tldr_en": "Improving skills from single failure trajectories is slow because early errors propagate and weaken feedback. Branch2Skill uses fixed-budget Monte Carlo tree search to create diverse reasoning paths, converting a tree into dense supervision that makes skill evolution more token-efficient.",
+      "llm_tldr_cn": "技能演化依赖失败轨迹反馈，但单条轨迹中早期推理错误会向后传播，使反馈质量下降，反复试错还消耗大量token。Branch2Skill在固定预算下用蒙特卡洛树搜索生成多条推理路径，将单棵推理树转化为密集的监督信号用于技能修正。这让每次执行都能提供更多可学习信息，显著降低技能演化的迭代代价。为利用负反馈高效自主改进Agent技能提供了可扩展的技术路线。",
+      "llm_tldr": "技能演化依赖失败轨迹反馈，但单条轨迹中早期推理错误会向后传播，使反馈质量下降，反复试错还消耗大量token。Branch2Skill在固定预算下用蒙特卡洛树搜索生成多条推理路径，将单棵推理树转化为密集的监督信号用于技能修正。这让每次执行都能提供更多可学习信息，显著降低技能演化的迭代代价。为利用负反馈高效自主改进Agent技能提供了可扩展的技术路线。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "How does an agent evolve its skills through self improvement and feedback?",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.15165v1",
+      "source": "arxiv",
+      "title": "SkillCommit: Evolving Agent Skills through Behaviorally Validated Scope Expansion",
+      "abstract": "Large language model (LLM) agents can continually improve without parameter updates by converting historical experience into reusable procedural knowledge. However, existing methods often consolidate experience based on semantic similarity or LLM judgments, which may merge superficially related but behaviorally incompatible strategies and thereby degrade performance. To address the issue, we propose SkillCommit, an online skill evolution framework that continuously transforms experience into a hierarchical library of reusable skills. Each new experience is initially preserved as an instance-specific patch, retaining the behavior validated in its local context. As related skills accumulate, SkillCommit abstracts those sharing a common behavioral mechanism into higher-level skills. Specifically, for each incoming skill, embedding-based retrieval first identifies candidate related skills. Cross-instance replay and an LLM-based mechanism check determine whether these skills transfer across cases and share a common underlying mechanism. Candidates that pass both checks are abstracted into a higher-level skill and committed only if it preserves the validated behavior of all constituent skills. Experiments on RuleArena, OpenExempt and KOR-Bench demonstrate that SkillCommit consistently improves agent performance across diverse domains. Moreover, the learned skills transfer across model scales and families, enabling cross-model experience transfer.",
+      "authors": [
+        "Yu He",
+        "Weikai Yang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-15T11:03:07+00:00",
+      "link": "https://arxiv.org/pdf/2608.15165v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Automatic online skill evolution framework converting experience into behaviorally validated hierarchical skill library for LLM agents",
+      "llm_evidence_cn": "自动将经验转化为行为验证的分层技能库，直接支持智能体技能演化",
+      "llm_evidence": "自动将经验转化为行为验证的分层技能库，直接支持智能体技能演化",
+      "canonical_evidence": "自动将经验转化为行为验证的分层技能库，直接支持智能体技能演化",
+      "llm_tldr_en": "SkillCommit is an online skill-evolution framework that turns experience into reusable hierarchical skills for LLM agents. It preserves instance patches and abstracts only behaviorally compatible strategies, avoiding degradation and enabling retraining-free continual improvement.",
+      "llm_tldr_cn": "针对现有方法按语义相似度或LLM判断整合经验、容易合并行为不兼容策略并导致智能体性能下降的问题，SkillCommit提出在线技能演化框架，将历史经验持续转化为分层可复用技能库。新经验先保留为实例级补丁，当相关技能积累后，只对共享行为共性的经验进行抽象。该机制无需参数更新即可实现智能体持续改进，为免重训技能演化提供了可靠的基础。",
+      "llm_tldr": "针对现有方法按语义相似度或LLM判断整合经验、容易合并行为不兼容策略并导致智能体性能下降的问题，SkillCommit提出在线技能演化框架，将历史经验持续转化为分层可复用技能库。新经验先保留为实例级补丁，当相关技能积累后，只对共享行为共性的经验进行抽象。该机制无需参数更新即可实现智能体持续改进，为免重训技能演化提供了可靠的基础。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.16068v1",
+      "source": "arxiv",
+      "title": "CAPO: Constraint-Aware Prompt Optimization for LLM Agents",
+      "abstract": "Large language models (LLMs) are increasingly deployed as agents that rely on system prompts to use tools and complete tasks. Such deployments impose distinct operational requirements, including appropriate tool use, concise prompts and solution paths, and compliance with safety and formatting policies. For many practitioners, however, assembling domain-specific supervised data to post-train models to meet these requirements is infeasible. We introduce CAPO (Constraint-Aware Prompt Optimization), a primal-dual method that combines pool-based rewrites with adaptive constraint weighting to optimize system prompts under explicit operational constraints. Across agentic benchmarks, CAPO more reliably reaches empirically feasible operating points while improving task performance. CAPO also generalizes beyond agentic settings, achieving strong results on assistant-style evaluations with output-format and safety/privacy constraints. We further introduce DCAPO (Dynamically Trained CAPO), which trains a feedback- and dual-conditioned rewriter with pool-based GRPO while keeping the task agent frozen. Across task agents of different sizes, DCAPO produces a feasible prompt in every evaluated domain and matches or improves the task accuracy achieved by the evaluated baselines. A surrogate analysis characterizes how finite-pool and discrete-rewrite errors enter the inexact primal-dual procedure.",
+      "authors": [
+        "Victor Ye Dong",
+        "Reid Pryzant",
+        "Yi Liu",
+        "Jian Jiao"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-08-17T04:01:04+00:00",
+      "link": "https://arxiv.org/pdf/2608.16068v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Automatic constraint-aware optimization of system prompts for LLM agents without model fine-tuning.",
+      "llm_evidence_cn": "无需微调，通过候选池改写与自适应约束加权自动优化智能体系统提示。",
+      "llm_evidence": "无需微调，通过候选池改写与自适应约束加权自动优化智能体系统提示。",
+      "canonical_evidence": "无需微调，通过候选池改写与自适应约束加权自动优化智能体系统提示。",
+      "llm_tldr_en": "CAPO proposes constraint-aware automatic prompt optimization using pool-based rewrites with adaptive constraint weighting, enabling system prompts for LLM agents to satisfy tool-use, safety, and format constraints without domain-specific supervised post-training.",
+      "llm_tldr_cn": "CAPO针对LLM智能体部署需要满足工具使用、简洁路径、安全和格式等操作约束而难以获取监督数据进行后训练的难题，提出原始-对偶方法，将基于候选池的重写与自适应约束权重结合，自动优化系统提示。在智能体基准上，该方法能更稳定地达到经验可行的操作点并提升任务表现，为免训练的提示自动优化提供了有效范式。",
+      "llm_tldr": "CAPO针对LLM智能体部署需要满足工具使用、简洁路径、安全和格式等操作约束而难以获取监督数据进行后训练的难题，提出原始-对偶方法，将基于候选池的重写与自适应约束权重结合，自动优化系统提示。在智能体基准上，该方法能更稳定地达到经验可行的操作点并提升任务表现，为免训练的提示自动优化提供了有效范式。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic optimization of prompts or instructions without fine tuning a model",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.16544v1",
+      "source": "arxiv",
+      "title": "VCE-Skill: Enhancing Skill Self-Evolution with Version-Change Experience",
+      "abstract": "Agents increasingly rely on reusable skills to encode task knowledge, tool-use procedures, and validation rules. Existing skill self-evolution methods primarily revise skills using execution trajectories collected from current tasks, leaving the evolution knowledge accumulated in public skill version histories largely untapped. Our pilot study reveals a clear complementarity between the two sources: public skill changes provide reusable evolution priors, whereas trajectories provide evidence grounded in the current task. Motivated by this, we propose VCE-Skill, which distills noisy and implementation-specific public skill changes into reusable, structured version-change experience and adaptively fuses it with trajectory-derived proposals from the base evolver, thereby exploiting external experience while retaining task-specific evidence. Extensive experiments demonstrate that VCE-Skill improves skill self-evolution, increasing mean scores by 3.20--4.98 points; transfer experiments further show that the resulting skills achieve stronger cross-model transfer performance. Our work highlights public skill version changes as a previously underexplored yet effective source of prior knowledge and advances trajectory-driven skill self-evolution.",
+      "authors": [
+        "Jianming Chen",
+        "Xuanbin Ye",
+        "Yawen Wang",
+        "Junjie Wang",
+        "Qing Wang",
+        "Fanjiang XU"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "published": "2026-08-17T13:16:59+00:00",
+      "link": "https://arxiv.org/pdf/2608.16544v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Skill self-evolution grounded in version-change experience and trajectory feedback",
+      "llm_evidence_cn": "利用版本变更经验与轨迹反馈增强技能自进化",
+      "llm_evidence": "利用版本变更经验与轨迹反馈增强技能自进化",
+      "canonical_evidence": "利用版本变更经验与轨迹反馈增强技能自进化",
+      "llm_tldr_en": "VCE-Skill distills noisy, implementation-specific public skill change histories into reusable structured version-change experience, and adaptively fuses it with trajectory-derived skill revision proposals to boost skill self-evolution.",
+      "llm_tldr_cn": "现有技能自进化主要利用当前任务的执行轨迹修订技能，而公共技能版本历史中的进化知识未被充分利用。VCE-Skill将嘈杂且面向具体实现的公共技能变更提炼为可复用的结构化版本变更经验，并与基线方法从轨迹得到的修改建议自适应融合。实验显示该融合能显著提升技能自进化的质量，说明版本历史可作为轨迹之外的互补进化先验，为智能体技能持续改进提供新数据源。",
+      "llm_tldr": "现有技能自进化主要利用当前任务的执行轨迹修订技能，而公共技能版本历史中的进化知识未被充分利用。VCE-Skill将嘈杂且面向具体实现的公共技能变更提炼为可复用的结构化版本变更经验，并与基线方法从轨迹得到的修改建议自适应融合。实验显示该融合能显著提升技能自进化的质量，说明版本历史可作为轨迹之外的互补进化先验，为智能体技能持续改进提供新数据源。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "How does an agent evolve its skills through self improvement and feedback?",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.17587v1",
+      "source": "arxiv",
+      "title": "Write, Execute, Refine: From Skill Followers to Skill Optimizers via Reinforcement Learning from Execution Feedback",
+      "abstract": "Expert-written natural language skills can improve tool-using agents, yet agent-authored skills perform 8-11 points worse than using no skill. This gap suggests that following procedural guidance and improving it from execution evidence are distinct capabilities. Inference time loops can repair skills but do not improve the model that writes the next one. We study how to organize execution experience from intermediate skills into training states for an optimizer. We introduce WER (Write, Execute, and Refine), a multi-phase framework that trains a Skill Optimizer outside a frozen executor. The optimizer proposes skills, a frozen agent executes each repeatedly, and a programmatic verifier scores the outcomes. The scores provide relative credit and select mixed-outcome records. Matched successful and failed trajectories from these records form the next phase's refinement states, so the optimizer learns from the consequences of its earlier outputs. On BFCL v4 multi-turn and tau2-bench, WER improves average Pass@1 over the no-skill baseline by 7.80 and 3.85 points, respectively. Under an identical refinement workflow, it outperforms the same backbone without optimizer training by 9.35 and 10.29 points. The trained 4B optimizer reaches 76.63 percent on BFCL v4, outperforming all evaluated off-the-shelf general-purpose models used as skill optimizers on average.",
+      "authors": [
+        "Kang Peng",
+        "Zhiwei Zhang",
+        "Yichen Zhang",
+        "Zezhong Wang",
+        "Yiming Du",
+        "Geng Tu",
+        "Baojun Wang",
+        "Bin Liang",
+        "Ruifeng Xu",
+        "Kam-Fai Wong"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-18T09:52:48+00:00",
+      "link": "https://arxiv.org/pdf/2608.17587v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Trains a skill optimizer from execution feedback, enabling agents' skills to improve without manual coding.",
+      "llm_evidence_cn": "利用执行反馈强化学习训练技能优化器，使agent技能无需人工编码即可自我改进。",
+      "llm_evidence": "利用执行反馈强化学习训练技能优化器，使agent技能无需人工编码即可自我改进。",
+      "canonical_evidence": "利用执行反馈强化学习训练技能优化器，使agent技能无需人工编码即可自我改进。",
+      "llm_tldr_en": "Agent-authored skills can underperform using no skill. WER proposes a Write-Execute-Refine framework that trains a separate Skill Optimizer from execution feedback while keeping the executor frozen. A programmatic verifier scores repeated executions, letting skill followers become effective skill optimizers. Direct evidence for automatic skill self-improvement.",
+      "llm_tldr_cn": "语言智能体自行撰写的自然语言技能常比不使用技能差8-11分，说明遵循技能与改进技能是不同能力。WER提出写-执行-精炼多阶段框架，在冻结执行器的前提下训练专门的技能优化器，并让程序化验证器为多次执行结果评分。结果显示该框架能把技能跟随者变成有效的技能优化者，产出更稳定的技能。这为agent从执行反馈中自动优化技能提供了端到端方案。",
+      "llm_tldr": "语言智能体自行撰写的自然语言技能常比不使用技能差8-11分，说明遵循技能与改进技能是不同能力。WER提出写-执行-精炼多阶段框架，在冻结执行器的前提下训练专门的技能优化器，并让程序化验证器为多次执行结果评分。结果显示该框架能把技能跟随者变成有效的技能优化者，产出更稳定的技能。这为agent从执行反馈中自动优化技能提供了端到端方案。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "How does an agent evolve its skills through self improvement and feedback?",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.22339v1",
+      "source": "arxiv",
+      "title": "When Not to Imitate: Boundary-Aware Skill Memory for Reliable Tool-Use LLM Agents",
+      "abstract": "Extracting skills from past successes is critical for the efficient evolution of Large Language Model (LLM) agents. Prevailing agent self-evolution paradigms typically rely on a core assumption: equipping LLMs with skill memories derived from successful trajectories will monotonically improve their problem-solving capabilities. However, probe analyses reveal that extracting skills solely from successful trajectories traps the model in a \\textbf{Skill Imitation Trap}. For tasks that resemble past successes but require different tools, retrieving more skills paradoxically increases the model's confidence in wrong tool calls---procedure skills raise the wrong-tool margin by $47\\%$ over a memory-free baseline. To overcome this limitation, we propose \\textbf{Boundary-Aware Skill Memory} (BASM), which augments each skill with explicit boundary fields---applicability conditions, risk cues, avoidance rules, and recovery notes. These fields transform each retrieved skill from an unconditional action template into state-conditioned guidance: the agent applies the skill when its conditions hold, suppresses inapplicable tool calls when they do not, and issues targeted repairs when execution fails. Across three agent benchmarks and four model scales, BASM consistently outperforms success-distilled skill-memory baselines: it improves task success rate by up to $23.8\\%$ on AppWorld, accuracy by up to $5.0\\%$ on BFCL, and reduces attack success rate by $4.6\\%$ on AgentDojo, while simultaneously reducing average AppWorld steps by up to $6.6\\%$ relative to the memory-free baseline.",
+      "authors": [
+        "Zihan Lin",
+        "Zhenyu Chen",
+        "Jiawen Wei",
+        "Xiaohan Wang",
+        "Jie Cao",
+        "Jiajun Chai",
+        "Wei Lin",
+        "Guojun Yin",
+        "Ran He"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-23T10:16:06+00:00",
+      "link": "https://arxiv.org/pdf/2608.22339v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Agent skill self-evolution research that reveals skill imitation trap and proposes boundary-aware skill memory for reliable tool-use",
+      "llm_evidence_cn": "提出边界感知技能记忆，引导自进化智能体安全复用成功经验而非盲目模仿",
+      "llm_evidence": "提出边界感知技能记忆，引导自进化智能体安全复用成功经验而非盲目模仿",
+      "canonical_evidence": "提出边界感知技能记忆，引导自进化智能体安全复用成功经验而非盲目模仿",
+      "llm_tldr_en": "This paper challenges monotonic skill-memory benefit in agent self-evolution, exposes the Skill Imitation Trap with probe analyses, and proposes boundary-aware skill memory to prevent wrong tool imitation for reliable tool-use agents.",
+      "llm_tldr_cn": "现有智能体自进化常假设从成功轨迹中提取技能记忆总能提升能力，但探针分析发现这会落入技能模仿陷阱：对貌似相似但需不同工具的任务，技能越多反而使智能体更自信地调用错误工具，过程技能可使错误工具置信度提升47%。为此提出边界感知技能记忆，识别并限制只能迁移到行为兼容场景的技能，从而提升工具使用型智能体的可靠性并避免盲目模仿误差。",
+      "llm_tldr": "现有智能体自进化常假设从成功轨迹中提取技能记忆总能提升能力，但探针分析发现这会落入技能模仿陷阱：对貌似相似但需不同工具的任务，技能越多反而使智能体更自信地调用错误工具，过程技能可使错误工具置信度提升47%。为此提出边界感知技能记忆，识别并限制只能迁移到行为兼容场景的技能，从而提升工具使用型智能体的可靠性并避免盲目模仿误差。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "How does an agent evolve its skills through self improvement and feedback?",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.22610v1",
+      "source": "arxiv",
+      "title": "Coalition-Aware Skill Reliability for Self-Evolving Agents",
+      "abstract": "Agent skills, structured artifacts distilled from interaction trajectories and dynamically reused from skill banks, have become a central mechanism for enabling large language model (LLM)-based self-evolving agents to learn from past experience. Yet existing work has largely focused on the operational aspects of skills, such as acquisition, evolution, and retrieval, while leaving a more fundamental reliability question unresolved: Do accumulated skills in an agent's skill bank actually make positive mechanistic contributions? We investigate this question through systematic skill-bank audits across alternative bank compositions and deployment domains, measuring the resulting changes in agent behavior. These audits reveal two recurring reliability failures: coalition pollution, where bank-level gains conceal negative coalition-level skill contributions, and cross-domain utility reversal, where source-beneficial skills reverse their effects after transfer. These findings motivate two reliability interventions: coalition-aware skill selection during skill accumulation and label-free skill masking after transfer. Coalition-Aware Skill Selection (CASS) selects more reliable candidate skills for the current bank using sampled Shapley marginals. Unsupervised Skill-Masked Coalition Optimizer (u-SMCO) masks transferred skills whose exclusion improves retrieval quality on unlabeled target-domain data. Agentic experiments on LoCoMo, LongMemEval, HotpotQA, and ALFWorld show that CASS and u-SMCO consistently improve task performance and cross-domain generalization over strong skill-based self-evolving agent baselines. Beyond accuracy, coalition-conditioned reliability modeling reduces sensitivity to noisy outcome-reward fluctuations during reinforcement learning and exposes the limits of isolation-based skill evaluation.",
+      "authors": [
+        "Qiyan Zhao",
+        "Xiaofeng Zhang",
+        "Bo Liu",
+        "Minda Chen",
+        "Wei Xiong",
+        "Jingyang Chen",
+        "Guanting Ye",
+        "Wenhao Yu",
+        "Xiaosong Yuan",
+        "Shijie Han",
+        "Da-Han Wang",
+        "Jianmin Ji",
+        "Fei Huang",
+        "Xu-Yao Zhang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-23T21:35:22+00:00",
+      "link": "https://arxiv.org/pdf/2608.22610v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "systematic skill-bank audits measuring whether accumulated skills make positive mechanistic contributions and exposing coalition failures, providing reliability-based quality evaluation for self-evolving agents",
+      "llm_evidence_cn": "通过系统性技能库审计衡量技能是否产生正向机制贡献并揭示联盟失效，为自进化智能体技能质量与可靠性评估提供依据",
+      "llm_evidence": "通过系统性技能库审计衡量技能是否产生正向机制贡献并揭示联盟失效，为自进化智能体技能质量与可靠性评估提供依据",
+      "canonical_evidence": "通过系统性技能库审计衡量技能是否产生正向机制贡献并揭示联盟失效，为自进化智能体技能质量与可靠性评估提供依据",
+      "llm_tldr_en": "For LLM-based self-evolving agents, this paper audits whether skills in a skill bank make positive mechanistic contributions under alternative bank compositions and deployment domains, revealing coalition failures and emphasizing skill reliability evaluation.",
+      "llm_tldr_cn": "基于技能库的自进化智能体把技能作为从交互轨迹中提炼并复用的结构化工件，但已有研究偏向获取、演化与检索，忽略了技能是否真正带来正向机制贡献。作者通过改变技能库组成与部署域进行系统性审计，衡量Agent行为变化来回答该问题。审计发现技能组合中反复出现联盟式可靠性失效，说明积累与检索并不自动保证技能有效。该工作为生成技能的质量度量、可靠性评估和技能库演化提供了重要方法。",
+      "llm_tldr": "基于技能库的自进化智能体把技能作为从交互轨迹中提炼并复用的结构化工件，但已有研究偏向获取、演化与检索，忽略了技能是否真正带来正向机制贡献。作者通过改变技能库组成与部署域进行系统性审计，衡量Agent行为变化来回答该问题。审计发现技能组合中反复出现联盟式可靠性失效，说明积累与检索并不自动保证技能有效。该工作为生成技能的质量度量、可靠性评估和技能库演化提供了重要方法。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "evaluation criteria and metrics for measuring the quality of generated skills and prompts",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.24641v1",
+      "source": "arxiv",
+      "title": "Aging of Prompt Engineering Techniques Across LLM Versions",
+      "abstract": "Prompt engineering and prompt engineering techniques (PETs) have become an integral part of software engineering for AI systems. However, new LLMs are released frequently and it remains unclear how the effectiveness of prompt engineering techniques changes across successive generations of Large Language Models (LLMs). To this end, we conduct a partial replication of the study by Khojah et al. (2025). We evaluate five techniques - Zero-Shot, Few-Shot, Chain-of-Thought (CoT), Contrastive Chain-of-Thought (CCoT), and an adapted version of Program-of-Thought (PoT) - on six instruction-tuned models grouped into three version pairs: GPT-3.5-Turbo/GPT-4o, Qwen2 7B Instruct/Qwen2.5 7B Instruct, and Mistral-7B-Instruct/Mistral-Large. We use a cleaned subset of the CodePromptEval dataset with 218 context-rich Python functions and 19,620 total generations assessed via pass@k-based functional correctness to evaluate model pairs on function-level code generation tasks. We show that prompt engineering \"ages\" in a model-family-specific way: Newer GPT models exhibit diminishing or even negative marginal gains from structured prompting, suggesting that instruction-following and reasoning scaffolds are increasingly internalized, whereas Qwen models continue to benefit substantially from Few-Shot and CCoT. Mistral models show mixed behavior with persistent gains from CCoT but attenuated benefits from CoT and PoT. Our results imply that effective prompting strategies must be adapted per model family and generation rather than transferred unchanged. This motivates future work on adaptive, model-aware prompting and broader, multi-dimensional code quality evaluation.",
+      "authors": [
+        "Anastasiia Rudyk",
+        "Julian Oertel",
+        "Regina Hebig"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE"
+      ],
+      "published": "2026-08-25T14:53:12+00:00",
+      "link": "https://arxiv.org/pdf/2608.24641v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "examines how prompt engineering techniques such as CoT and few-shot age in effectiveness across successive LLM generations, directly addressing robustness of prompt design under base model change",
+      "llm_evidence_cn": "在多个同源但不同版本的LLM上复现并评测五类提示工程技巧，直接探讨更换基座模型后提示策略有效性的变化与老化",
+      "llm_evidence": "在多个同源但不同版本的LLM上复现并评测五类提示工程技巧，直接探讨更换基座模型后提示策略有效性的变化与老化",
+      "canonical_evidence": "在多个同源但不同版本的LLM上复现并评测五类提示工程技巧，直接探讨更换基座模型后提示策略有效性的变化与老化",
+      "llm_tldr_en": "How long do prompt engineering techniques stay useful when new LLM versions appear? This replication tests five techniques on six instruction-tuned models forming three version pairs, showing that technique effectiveness can fade or shift unpredictably across model generations.",
+      "llm_tldr_cn": "提示工程技术已成为AI系统软件开发的一部分，但新模型不断发布，其有效性会如何跨版本变化尚不清楚。本文在GPT-3.5与GPT-4o、Qwen2与Qwen2.5、Mistral-7B与Mistral-Large等三组模型对上复现五种提示技术的验证。结果显示提示技术在不同版本模型间的效能会发生明显老化或迁移，没有跨基座模型永恒有效的提示策略。这为设计鲁棒且可迁移的系统提示与技能定义提供了关键实证依据。",
+      "llm_tldr": "提示工程技术已成为AI系统软件开发的一部分，但新模型不断发布，其有效性会如何跨版本变化尚不清楚。本文在GPT-3.5与GPT-4o、Qwen2与Qwen2.5、Mistral-7B与Mistral-Large等三组模型对上复现五种提示技术的验证。结果显示提示技术在不同版本模型间的效能会发生明显老化或迁移，没有跨基座模型永恒有效的提示策略。这为设计鲁棒且可迁移的系统提示与技能定义提供了关键实证依据。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "prompt design strategies that remain effective when the underlying base model is changed",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.24747v1",
+      "source": "arxiv",
+      "title": "SkillForge: Evolving Verifiable Skills for Reinforcement Learning Agents",
+      "abstract": "Large language model (LLM) agents are trained with reinforcement learning (RL) for complex decision-making tasks. However, most RL-trained agents remain episodic and cannot accumulate reusable knowledge across episodes. Recent skill-based approaches, such as SkillRL, attempt to address this issue by extracting skills from raw trajectories, but treat the skill bank as an append-only repository without verifying whether stored skills remain effective. In this paper, we propose SkillForge, a framework for continuous skill evolution that enables skills to be verified and refined through environment interaction. By making skill usage explicit during agent interaction, RL can directly optimize both environment actions and skill invocation decisions. SkillForge further introduces evidence-based skill verification and multi-pathway skill induction, allowing the skill bank to continuously grow while maintaining its quality. Extensive experiments on ALFWorld, WebShop, and AppWorld show that SkillForge consistently outperforms SkillRL, demonstrating the effectiveness of continuously verified skills in training stronger LLM agents.",
+      "authors": [
+        "Shidong Yang",
+        "Ziyu Ma",
+        "Tongwen Huang",
+        "Xucong Wang",
+        "Renda Li",
+        "Yiming Hu",
+        "Yong Wang",
+        "Xiangxiang Chu"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-08-25T15:52:10+00:00",
+      "link": "https://arxiv.org/pdf/2608.24747v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Continuous evolution and refinement of reusable skills via environment interaction and RL matches automatic agent-skill evolution.",
+      "llm_evidence_cn": "通过环境交互和RL持续验证、精炼并复用技能库，直接对应agent技能自动进化。",
+      "llm_evidence": "通过环境交互和RL持续验证、精炼并复用技能库，直接对应agent技能自动进化。",
+      "canonical_evidence": "通过环境交互和RL持续验证、精炼并复用技能库，直接对应agent技能自动进化。",
+      "llm_tldr_en": "RL-trained agents rarely accumulate reusable skills across episodes. SkillForge makes skill invocation explicit during interaction so RL optimizes both actions and skill usage, while verifying and refining stored skills through environment feedback. The result is a continuously evolving skill bank rather than an append-only repository. Target: skill evolution for agent.",
+      "llm_tldr_cn": "许多使用RL训练的智能体仍停留在单回合决策，无法积累跨回合可复用的技能，已有技能库又缺少有效性验证。SkillForge提出持续技能进化框架，将技能调用显式化纳入agent交互，使RL同时优化环境动作与技能选择，并通过环境反馈验证和精炼旧技能。结果表明技能库能随交互持续改进且保持有效。它为agent技能自进化提供了一个可验证的实现范式。",
+      "llm_tldr": "许多使用RL训练的智能体仍停留在单回合决策，无法积累跨回合可复用的技能，已有技能库又缺少有效性验证。SkillForge提出持续技能进化框架，将技能调用显式化纳入agent交互，使RL同时优化环境动作与技能选择，并通过环境反馈验证和精炼旧技能。结果表明技能库能随交互持续改进且保持有效。它为agent技能自进化提供了一个可验证的实现范式。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.27266v1",
+      "source": "arxiv",
+      "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
+      "abstract": "Efficiently improving autonomous agents across diverse tasks is central to accelerating recursive self-improvement (RSI) in agentic AI, with prompt optimization emerging as a promising approach capable of delivering performance gains comparable to those achieved by fine-tuning model weights, while reducing computational costs in both optimization and serving. However, recent developments increasingly favor unnecessarily complex prompt optimizers. We introduce Naive Prompt Optimization (NPO), a lightweight single-lineage method that iteratively revises prompts using a teacher model with rollout feedback. NPO achieves comparable or better performance than GEPA with fewer rollouts, and its advantage increases with stronger teacher models, suggesting that stronger teacher reasoning can partially substitute for optimizer-side search complexity. In interactive games, NPO remains broadly competitive with GEPA, while GRPO performs better on some tasks less amenable to prompt optimization. We also show that NPO-optimized prompts elicit similar performance improvements when applied verbatim to other student models, especially across models within the same family. Overall, our preliminary results show that simple, linear prompt optimization can rival substantially more sophisticated and complex search procedures.",
+      "authors": [
+        "Yuan Chang",
+        "Xiaoqi Chen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-08-27T15:47:58+00:00",
+      "link": "https://arxiv.org/pdf/2608.27266v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Training-free automatic prompt optimization that iteratively revises prompts without model fine-tuning",
+      "llm_evidence_cn": "免训练、无需微调的自动提示词优化方法",
+      "llm_evidence": "免训练、无需微调的自动提示词优化方法",
+      "canonical_evidence": "免训练、无需微调的自动提示词优化方法",
+      "llm_tldr_en": "Naive Prompt Optimization (NPO) is a lightweight single-lineage prompt optimizer that iteratively revises prompts using a teacher model with rollout feedback, matching or beating complex search with fewer rollouts, with no fine-tuning.",
+      "llm_tldr_cn": "针对复杂提示词优化器日益冗余的问题，NPO提出一种很轻量的单谱系方法：用教师模型结合路径反馈对提示词做迭代修改。该方法无需对底层模型做任何权重微调，只需少量路径即可达到或超过GEPA等复杂搜索方法的性能，且教师模型越强优势越明显。结果表明简洁的免训练提示词优化足以支撑递归自改进的智能体能力提升。",
+      "llm_tldr": "针对复杂提示词优化器日益冗余的问题，NPO提出一种很轻量的单谱系方法：用教师模型结合路径反馈对提示词做迭代修改。该方法无需对底层模型做任何权重微调，只需少量路径即可达到或超过GEPA等复杂搜索方法的性能，且教师模型越强优势越明显。结果表明简洁的免训练提示词优化足以支撑递归自改进的智能体能力提升。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "training free automatic prompt optimization methods that improve instructions without any model training or fine tuning",
+      "matched_requirement_id": "req-10",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2608.27454v1",
+      "source": "arxiv",
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "abstract": "Agent skills package specialized knowledge and workflows into reusable resources that extend AI agent capabilities. Recent work automatically discovers such skills from agent experience, which enables agents to progressively adapt through interaction. However, the insights that guide skill development typically remain scattered across optimization histories, limiting their systematic reuse across iterations. We introduce WikiSkill, a framework that co-evolves agent skills with a persistent knowledge base (wiki). At a high level, WikiSkill separates raw execution experience, accumulated knowledge, and executable skills, while continuously consolidating experience into the wiki, which subsequent skill updates can build on. Across diverse benchmarks and models, WikiSkill consistently outperforms state-of-the-art skill-evolution methods and improves over no-skill baselines in most model-benchmark settings. We find that skill evolution complements model scaling: larger models generally benefit more from evolved skills, while smaller models with skills can outperform substantially larger models without them. We also find that evolved skills transfer effectively across models and model families, and skills evolved by other models can outperform self-evolved skills. Finally, our ablation studies confirm that persistent knowledge accumulation in the wiki is critical for effective skill evolution. These results demonstrate the benefits of systematically accumulating and refining agent experience for developing reusable and transferable skills.",
+      "authors": [
+        "Liyan Tang",
+        "Cyrus Rashtchian",
+        "Chun-Sung Ferng",
+        "Andrew Tomkins",
+        "Da-Cheng Juan",
+        "Tu Vu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-08-27T17:59:11+00:00",
+      "link": "https://arxiv.org/pdf/2608.27454v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "WikiSkill co-evolves agent skills with a persistent wiki knowledge base, continually consolidating execution experience so subsequent skill updates build on prior insights",
+      "llm_evidence_cn": "WikiSkill将执行经验沉淀为持久化wiki知识库并与技能协同进化，支持跨轮次持续改进技能，直接对应技能自动新增、修改与优化",
+      "llm_evidence": "WikiSkill将执行经验沉淀为持久化wiki知识库并与技能协同进化，支持跨轮次持续改进技能，直接对应技能自动新增、修改与优化",
+      "canonical_evidence": "WikiSkill将执行经验沉淀为持久化wiki知识库并与技能协同进化，支持跨轮次持续改进技能，直接对应技能自动新增、修改与优化",
+      "llm_tldr_en": "Automatically discovered skills still develop poorly because guiding insights remain scattered across optimization histories. WikiSkill adds a persistent wiki between experience and skills, consolidating raw experience into reusable knowledge so subsequent skill updates can build on accumulated insights.",
+      "llm_tldr_cn": "从智能体经验中自动发现技能能够实现渐进式适应，但指导技能发展的洞察通常散落在各轮优化历史里，难以系统复用。为此WikiSkill将原始执行经验、积累知识与可执行技能分离，并持续把经验归纳进持久化的wiki知识库中。后续技能更新可以基于这些累积知识进行，实验显示该框架在多个基准上能有效增强技能演化。为Agent技能的长期、自动化演进提供了一种知识沉淀与复用的系统化架构。",
+      "llm_tldr": "从智能体经验中自动发现技能能够实现渐进式适应，但指导技能发展的洞察通常散落在各轮优化历史里，难以系统复用。为此WikiSkill将原始执行经验、积累知识与可执行技能分离，并持续把经验归纳进持久化的wiki知识库中。后续技能更新可以基于这些累积知识进行，实验显示该框架在多个基准上能有效增强技能演化。为Agent技能的长期、自动化演进提供了一种知识沉淀与复用的系统化架构。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2609.00829v1",
+      "source": "arxiv",
+      "title": "HarnessEvolve: Learning from Reference Trajectories for Reliable Agent Self-Evolution",
+      "abstract": "Self-evolving agents advance toward autonomy by optimizing their harness---prompts, skills, tools, and execution logic---based on environmental feedback. This paradigm, however, is hampered by three challenges: \\textit{credit assignment failure}, where terminal success/failure feedback makes it ambiguous which step caused the error; \\textit{shortcut learning}, where agents memorize task-specific patterns rather than acquire generalizable capabilities; and \\textit{catastrophic forgetting}, where unguarded updates degrade previously acquired competence. In this paper, we introduce HarnessEvolve, a self-evolving framework that learns from reference trajectories to achieve reliable agent self-evolution. HarnessEvolve decouples the execution agent from the evolutionary pipeline, assigning execution, evaluation, optimization, and gating to independent agent modules, enabling generalizable and stable harness improvements. Specifically, HarnessEvolve overcomes credit assignment failure by generating reference trajectories (execution paths produced when given the ground-truth answers) and aligning failed executions against them to extract error signals, which are clustered to reveal systematic failure patterns. To prevent shortcut learning and catastrophic forgetting, candidate harness updates must pass two gates: a quality gate that filters data leakage and prompt bloat, and a performance gate that accepts each update if it improves on the current batch without degrading recent batches, with epoch-end validation on a held-out set selecting the best-performing accepted agent snapshot. We conduct extensive experiments on several benchmarks spanning open-domain and enterprise scenarios, using different models and agent frameworks. Results demonstrate that HarnessEvolve consistently outperforms state-of-the-art baselines across all benchmarks and settings, confirming reliability across task domains.",
+      "authors": [
+        "Wen Jiang",
+        "Mingmin Chu",
+        "Yimeng Tian",
+        "Qianxin Zhang",
+        "Haofei Yang",
+        "Rui Yang",
+        "Yang Liu",
+        "Tao Lv",
+        "Fangming Li"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-09-01T07:31:18+00:00",
+      "link": "https://arxiv.org/pdf/2609.00829v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Self-evolving agents optimize their prompts, skills, tools and execution logic from feedback, directly addressing skill self-improvement.",
+      "llm_evidence_cn": "围绕智能体从环境反馈中自进化其prompt、技能与工具，直接契合技能自我改进。",
+      "llm_evidence": "围绕智能体从环境反馈中自进化其prompt、技能与工具，直接契合技能自我改进。",
+      "canonical_evidence": "围绕智能体从环境反馈中自进化其prompt、技能与工具，直接契合技能自我改进。",
+      "llm_tldr_en": "HarnessEvolve introduces a self-evolving agent framework that learns from reference trajectories to optimize its harness (prompts, skills, tools, execution logic), overcoming credit assignment failure, shortcut learning, and catastrophic forgetting to achieve reliable agent self-evolution.",
+      "llm_tldr_cn": "HarnessEvolve针对自进化智能体因终端成功或失败反馈难以定位错误步骤而出现的信用分配失败、捷径学习与灾难性遗忘问题，提出从参考轨迹中学习的框架，并将执行与更新解耦以优化提示、技能、工具和执行逻辑。该框架旨在克服上述不稳定因素，实现更可靠的智能体自进化，为技能与提示的自动改进提供了可靠方案。",
+      "llm_tldr": "HarnessEvolve针对自进化智能体因终端成功或失败反馈难以定位错误步骤而出现的信用分配失败、捷径学习与灾难性遗忘问题，提出从参考轨迹中学习的框架，并将执行与更新解耦以优化提示、技能、工具和执行逻辑。该框架旨在克服上述不稳定因素，实现更可靠的智能体自进化，为技能与提示的自动改进提供了可靠方案。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "How does an agent evolve its skills through self improvement and feedback?",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2609.02094v1",
+      "source": "arxiv",
+      "title": "MASkills: Continual Skills Optimization for Multi-Agent LLM Systems",
+      "abstract": "LLM-based multi-agent systems have shown strong performance on complex tasks, yet continual improvement from interaction experience remains challenging. Existing self-reflection methods build experience memories, but memories are mostly hard to invoke, refine, or scale, while agent skills offer a more actionable unit: structured procedural knowledge that specifies when to act, how to act, and which resources or tools to use. We introduce MASkills, a continual learning framework that optimizes multi-agent LLM systems through agent skills. MASkills presents a new agent-optimization pipeline that integrates skill-conditioned credit assignment, hierarchical credit aggregation, and momentum-smoothed optimization, enabling agent skill libraries to evolve through refinement, induction, consolidation, and pruning. Experiments on HotpotQA, LoCoMo, and GAIA demonstrate the effectiveness of MASkills across multiple agentic tasks. Our code is available at https://github.com/DaRL-GenAI/MASkills",
+      "authors": [
+        "Huaiyuan Yao",
+        "Xiaoou Liu",
+        "Charles Fleming",
+        "Tianlong Chen",
+        "Hua Wei"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-09-02T04:34:17+00:00",
+      "link": "https://arxiv.org/pdf/2609.02094v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Automatic evolution and optimization of multi-agent LLM skill libraries through continual learning.",
+      "llm_evidence_cn": "面向技能库的持续学习优化，实现智能体技能在交互经验中的自动演化。",
+      "llm_evidence": "面向技能库的持续学习优化，实现智能体技能在交互经验中的自动演化。",
+      "canonical_evidence": "面向技能库的持续学习优化，实现智能体技能在交互经验中的自动演化。",
+      "llm_tldr_en": "MASkills treats agent skills as structured procedural knowledge and introduces a continual learning pipeline with skill-conditioned credit assignment, hierarchical credit aggregation, and momentum-smoothed optimization to evolve multi-agent LLM skill libraries from interaction experience.",
+      "llm_tldr_cn": "MASkills针对多智能体LLM系统难以从交互经验中持续改进的问题，提出将智能体技能视为结构化程序性知识，并通过技能条件化信用分配、层级信用聚合与动量平滑优化构成的持续学习流程，使技能库随经验自动演化。其在多智能体任务中验证了对技能库持续优化的有效性，为Agent自进化提供了可借鉴的技能优化框架。",
+      "llm_tldr": "MASkills针对多智能体LLM系统难以从交互经验中持续改进的问题，提出将智能体技能视为结构化程序性知识，并通过技能条件化信用分配、层级信用聚合与动量平滑优化构成的持续学习流程，使技能库随经验自动演化。其在多智能体任务中验证了对技能库持续优化的有效性，为Agent自进化提供了可借鉴的技能优化框架。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2608.06880v1",
+      "source": "arxiv",
+      "title": "SkillAligner: Treating Retrieved Skills as Adaptable Drafts at Execution Time",
+      "abstract": "General-purpose skills promise reusable procedural knowledge for language agents, yet semantic relevance does not guarantee execution utility: a retrieved skill may encode assumptions that conflict with the current task, execution environment, or other retrieved skills. We formalize this problem as the skill--execution misfit. To address it, we propose SkillAligner, a training-free execution-time skill adaptation framework that treats retrieved skills as adaptable drafts rather than fixed instructions. Before execution, SkillAligner performs a one-time joint adaptation that specializes useful skill fragments to task requirements, aligns their procedural assumptions with the available execution interface, and composes the resulting guidance by resolving dependencies, conflicts, and redundancy across skills. The adapted content is consolidated into a compact execution guide and reused throughout the subsequent trajectory. Extensive experiments across diverse agent benchmarks and model backbones show that SkillAligner substantially improves task performance over existing skill-use baselines, reduces skill-induced regressions at the instance level, and lowers total inference cost.",
+      "authors": [
+        "Qinfeng Li",
+        "Dalin He",
+        "Yuntai Bao",
+        "Ying Yang",
+        "Ruoxi Chen",
+        "Xinyan Yu",
+        "Lizhou Liang",
+        "Ge Su",
+        "Wenqi Zhang",
+        "Xuhong Zhang"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-08-07T07:05:53+00:00",
+      "link": "https://arxiv.org/pdf/2608.06880v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "training-free execution-time skill adaptation framework treating retrieved skills as adaptable drafts and optimizing instructions without fine-tuning",
+      "llm_evidence_cn": "提出免训练的执行期技能自适应框架，将检索技能视为草稿并自动优化为与任务匹配的指令",
+      "llm_evidence": "提出免训练的执行期技能自适应框架，将检索技能视为草稿并自动优化为与任务匹配的指令",
+      "canonical_evidence": "提出免训练的执行期技能自适应框架，将检索技能视为草稿并自动优化为与任务匹配的指令",
+      "llm_tldr_en": "SkillAligner treats retrieved agent skills as adaptable drafts rather than fixed instructions. A training-free one-time joint adaptation specializes useful skill fragments to the task and aligns procedural assumptions with the available execution interface before execution.",
+      "llm_tldr_cn": "该文指出检索到的通用技能虽然语义相关却可能与任务、环境或其他技能冲突，形成技能-执行错位。为此提出SkillAligner，一个免训练的执行期技能自适应框架，将技能当作可调整草稿而非固定指令。在执行前进行一次联合适应，把有用技能片段特化到任务需求，并使其流程假设与执行接口对齐，随后重组为最终指导。这种方式展示了无需模型微调的指令自动优化能力，适用于技能库与提示的自动调整。",
+      "llm_tldr": "该文指出检索到的通用技能虽然语义相关却可能与任务、环境或其他技能冲突，形成技能-执行错位。为此提出SkillAligner，一个免训练的执行期技能自适应框架，将技能当作可调整草稿而非固定指令。在执行前进行一次联合适应，把有用技能片段特化到任务需求，并使其流程假设与执行接口对齐，随后重组为最终指导。这种方式展示了无需模型微调的指令自动优化能力，适用于技能库与提示的自动调整。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic optimization of prompts or instructions without fine tuning a model",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2608.09168v1",
+      "source": "arxiv",
+      "title": "From Relevance to Execution Utility: Reward-Aware Dynamic Execution Gating for Skill-Based LLM Agents",
+      "abstract": "Agent skills are increasingly used to equip large language model (LLM) agents with reusable procedural knowledge. Although recent work has substantially improved skill retrieval due to the increasing skill libraries, retrieving a plausible skill bundle does not guarantee that executing it is worthwhile. Since every skill-conditioned rollout is computationally expensive, deciding whether a retrieved bundle should be executed has become an increasingly important challenge. To this end, we introduce the Reward-Aware Dynamic Execution Gate (RADEG), a lightweight, retriever-agnostic decision layer between skill retrieval and agent execution. RADEG learns a low-cost surrogate model that predicts the execution utility of a query--bundle pair before the expensive rollout is launched. To obtain informative supervision while controlling for task difficulty, we locally perturb each retrieved bundle by deleting, adding, or replacing one skill, producing matched same-query rollouts that isolate the effect of bundle composition on verifier reward. During deployment, RADEG updates only a warm-started logistic head as new verifier feedback becomes available, enabling inexpensive adaptation of the execute/skip boundary without retraining either the retriever or the agent. Under a query-level held-out evaluation on 288 collected rollouts, RADEG substantially reduces unnecessary agent executions while preserving a large fraction of the downstream verifier reward. It consistently outperforms relevance-based and random gating across different execution budgets, demonstrating that execution-aware surrogate modeling provides a practical and cost-effective complement to skill retrieval.",
+      "authors": [
+        "Liang He",
+        "Jingbo Wen",
+        "Hongyu Gu",
+        "Hao Li",
+        "Haoyu Wang",
+        "Yixiong Chen",
+        "Kangning Cui",
+        "Xilu Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-10T06:28:25+00:00",
+      "link": "https://arxiv.org/pdf/2608.09168v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "reward-aware dynamic execution gating with a low-cost surrogate predicting execution utility of retrieved skill bundles as a quality-based decision metric",
+      "llm_evidence_cn": "用低成本代理模型预测检索技能包的执行效用，为判断技能质量与是否值得执行提供评估准则",
+      "llm_evidence": "用低成本代理模型预测检索技能包的执行效用，为判断技能质量与是否值得执行提供评估准则",
+      "canonical_evidence": "用低成本代理模型预测检索技能包的执行效用，为判断技能质量与是否值得执行提供评估准则",
+      "llm_tldr_en": "RADEG introduces a lightweight retriever-agnostic decision layer between skill retrieval and execution, learning a low-cost surrogate model to predict execution utility and gating expensive skill rollouts.",
+      "llm_tldr_cn": "随着技能库扩大，检索到看似相关的技能包并不保证值得执行，而每次技能条件下的执行都代价高昂。论文提出RADEG，在技能检索与执行之间加入轻量、与检索器无关的决策层，学习低成本代理模型预测查询技能组合的执行效用，并据此决定是否执行。该方法以执行效用为判据对技能进行筛选，本质上为技能与提示质量评估提供了可借鉴的指标与门控思路。",
+      "llm_tldr": "随着技能库扩大，检索到看似相关的技能包并不保证值得执行，而每次技能条件下的执行都代价高昂。论文提出RADEG，在技能检索与执行之间加入轻量、与检索器无关的决策层，学习低成本代理模型预测查询技能组合的执行效用，并据此决定是否执行。该方法以执行效用为判据对技能进行筛选，本质上为技能与提示质量评估提供了可借鉴的指标与门控思路。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "evaluation criteria and metrics for measuring the quality of generated skills and prompts",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2608.08303v1",
+      "source": "arxiv",
+      "title": "Query-Only Backdoor Attacks on Self-Evolving Skills via Trajectory Poisoning",
+      "abstract": "Agentic skills improve large language model (LLM) agents by encoding reusable procedures for complex tasks. However, manually authored skills often adapt poorly to long-horizon tasks and changing environments. To address the limitation, self-evolving skill systems have been developed to automatically construct and update skills from execution trajectories, shifting skill acquisition from external marketplaces to a trusted evolution pipeline. By replacing external skill acquisition with trusted internal construction, self-evolving skill systems reduce exposure to skill injection attacks that rely on direct skill manipulation. However, this skill evolution pipeline may introduce a new attack surface in which an attacker can indirectly steer skill evolution by inducing compromised trajectories through agent interactions. To demonstrate the threat, we propose Trajectory Backdoor Attack (TBA), a query-only attack that steers a trusted skill-evolution pipeline toward producing a backdoored skill. Specifically, we craft attacker-submitted queries to lead the agent to perform the target action and explicitly state the corresponding activation condition in the trajectory. We repeat the same condition-action pattern across diverse triggered tasks, while leaving clean queries unchanged, encouraging the evolver to consolidate the pattern as a reusable trigger-dependent rule into the evolved skill. Experiments on three benchmarks across two skill-evolution systems using four open- and closed-source backbone models demonstrate that TBA reliably implants conditional backdoors while preserving clean-task utility, matching or even surpassing direct skill injection. The results reveal a critical vulnerability in trajectory-driven skill evolution.",
+      "authors": [
+        "Yuyang Luo",
+        "Haoran Wang",
+        "Kai Shu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "published": "2026-08-08T19:31:19+00:00",
+      "link": "https://arxiv.org/pdf/2608.08303v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "Targets self-evolving skill systems that automatically construct and update skills from execution trajectories, exposing query-only trajectory poisoning risks.",
+      "llm_evidence_cn": "围绕从执行轨迹自动构建与更新技能的自进化技能系统，揭示查询级轨迹投毒可间接篡改技能演化。",
+      "llm_evidence": "围绕从执行轨迹自动构建与更新技能的自进化技能系统，揭示查询级轨迹投毒可间接篡改技能演化。",
+      "canonical_evidence": "围绕从执行轨迹自动构建与更新技能的自进化技能系统，揭示查询级轨迹投毒可间接篡改技能演化。",
+      "llm_tldr_en": "Examines self-evolving agent skills where systems automatically construct and update skills from trajectories; introduces query-only trajectory-poisoning backdoor to indirectly steer skill evolution without direct skill modification, exposing a new attack surface.",
+      "llm_tldr_cn": "自进化技能系统从执行轨迹自动构建并更新智能体技能，以可信的内部演化替代外部技能获取，从而降低直接技能注入风险。本文提出仅查询的轨迹投毒后门攻击：攻击者无需直接篡改技能，只需误导执行轨迹即可间接控制技能演化产物。结果显示，无法操作技能库时查询级投毒仍可操纵演化方向。该工作为智能体自进化管线的鲁棒性与安全评估提供重要警示。",
+      "llm_tldr": "自进化技能系统从执行轨迹自动构建并更新智能体技能，以可信的内部演化替代外部技能获取，从而降低直接技能注入风险。本文提出仅查询的轨迹投毒后门攻击：攻击者无需直接篡改技能，只需误导执行轨迹即可间接控制技能演化产物。结果显示，无法操作技能库时查询级投毒仍可操纵演化方向。该工作为智能体自进化管线的鲁棒性与安全评估提供重要警示。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "How does an agent evolve its skills through self improvement and feedback?",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2608.11338v1",
+      "source": "arxiv",
+      "title": "Better, Faster, Stronger: Programmatic Skill Learning Best Reduces Agent Cost",
+      "abstract": "Recently, the practice of augmenting LLM agent capability with skills has gained prevalence. We explore the cost effective adaptation of agents to novel domains by means of learning skills. Existing works focus on performance gain over cost effectiveness. As a result, little is known about what skill learning strategies save cost. We argue that among all the different skill learning methods, those that view skills as programs can achieve the best cost reduction. By executing sequences of actions deterministically, a program-augmented agent can reliably and cheaply achieve goals that would otherwise require trial and error and risk degenerate behavior over long horizons. An agent can learn at inference time by incrementally discovering these programs and equipping them for future tasks. We hypothesize that past trajectories contain enough signal to guide skill learning, even without replay or validation, provided the agent can learn to analyze them. To test our claims, we propose SpeedRunner, a coding agent that analyzes trajectories and refactors skills for better performance on future tasks. Across three different embodied environments, we show that SpeedRunner consistently achieves the frontier in learning and cost reduction while remaining robust against distribution shifts and environmental randomness.",
+      "authors": [
+        "Zixi Huang",
+        "Xiheng Wang",
+        "Andrew Wang",
+        "William Jurayj",
+        "Bernal Jiménez Gutiérrez",
+        "Daniel Khashabi",
+        "Nicholas Andrews"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-08-11T18:42:23+00:00",
+      "link": "https://arxiv.org/pdf/2608.11338v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "argues that programmatic skill learning best reduces agent cost and that an agent can learn at inference time by incrementally discovering programs, supporting self-optimization of skills without manual coding",
+      "llm_evidence_cn": "主张将技能视为程序能显著降低Agent成本并支持推理时增量发现程序，是无需人工编码的技能自优化路线",
+      "llm_evidence": "主张将技能视为程序能显著降低Agent成本并支持推理时增量发现程序，是无需人工编码的技能自优化路线",
+      "canonical_evidence": "主张将技能视为程序能显著降低Agent成本并支持推理时增量发现程序，是无需人工编码的技能自优化路线",
+      "llm_tldr_en": "This paper argues that among skill learning methods for adapting LLM agents to novel domains, treating skills as programs best reduces cost; an agent learns at inference time by incrementally discovering deterministic programs.",
+      "llm_tldr_cn": "现有技能学习方法多关注相对成本效益的性能提升，却很少研究何种策略能真正降低Agent成本。作者认为将技能看作可执行程序能取得最好的成本削减效果：通过确定性执行动作序列，程序化技能让智能体在长周期任务中无需反复试错即可可靠、廉价地达成目标。智能体可在推理阶段增量发现这些程序以持续学习。该工作为免人工编码的Agent技能自优化与自动演化提供了直接支撑。",
+      "llm_tldr": "现有技能学习方法多关注相对成本效益的性能提升，却很少研究何种策略能真正降低Agent成本。作者认为将技能看作可执行程序能取得最好的成本削减效果：通过确定性执行动作序列，程序化技能让智能体在长周期任务中无需反复试错即可可靠、廉价地达成目标。智能体可在推理阶段增量发现这些程序以持续学习。该工作为免人工编码的Agent技能自优化与自动演化提供了直接支撑。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "What are effective approaches for self optimization of agent skills without human manual coding?",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2608.13173v1",
+      "source": "arxiv",
+      "title": "SkillShapley: Boundary-Adaptive Shapley Valuation for Skill Step Attribution in LLM Agents",
+      "abstract": "Agent skills are crucial external instructions that enable language agents to execute long procedural tasks such as coding or document processing. Existing agent skills are primarily created through human manual crafting or agent execution traces, with limited understanding of how each step contributes to overall skill performance on specific tasks; i.e., there remains an open problem in quantifying the contribution of individual steps within an agent skill. To address this issue, we first model skill-step attribution as a Shapley value-based contribution estimation problem, and then propose SkillShapley, a step-level attribution framework for agent skills. Notably, SkillShapley operates in two phases, motivated by key empirical insights, i.e., discretized benchmark rewards that create sharp performance cliffs, and step interactions that are largely additive rather than synergistic. Specifically, it first identifies informative coalitional regions, and then adaptively samples new coalitions that can yield reusable marginal evidence. Experiments on skills from the widely adopted SkillsBench demonstrate that our SkillShapley can effectively and efficiently identify high- or low-value skill steps, providing several key takeaways for agent skill creation.",
+      "authors": [
+        "Chang Liu",
+        "Yuqi Zhang",
+        "Yiman Zhong",
+        "Boyi Liu",
+        "Hengjun Wang",
+        "Shuyue Wei"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-13T12:41:03+00:00",
+      "link": "https://arxiv.org/pdf/2608.13173v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Provides Shapley-value-based step-level attribution for agent skills, offering a quantitative metric to assess each step's contribution to skill performance.",
+      "llm_evidence_cn": "提出基于Shapley值的技能步骤级归因，为技能与提示的步骤质量和贡献评估提供量化指标。",
+      "llm_evidence": "提出基于Shapley值的技能步骤级归因，为技能与提示的步骤质量和贡献评估提供量化指标。",
+      "canonical_evidence": "提出基于Shapley值的技能步骤级归因，为技能与提示的步骤质量和贡献评估提供量化指标。",
+      "llm_tldr_en": "SkillShapley formalizes contribution of individual steps in an LLM agent skill as Shapley-value attribution and proposes boundary-adaptive step-level attribution to quantify step importance, supporting skill debugging and quality evaluation.",
+      "llm_tldr_cn": "智能体技能以外部指令形式执行长程序化任务，但每步对最终表现的贡献难以量化。SkillShapley将技能步骤归因建模为Shapley值贡献估计问题，提出边界自适应的步骤级归因框架。该框架依据关键经验观察分两阶段估计各步骤对整体任务表现的贡献，能够辅助定位并改进技能中的低效或有害步骤。这为生成技能与提示的质量评估提供了可计算的归因指标。",
+      "llm_tldr": "智能体技能以外部指令形式执行长程序化任务，但每步对最终表现的贡献难以量化。SkillShapley将技能步骤归因建模为Shapley值贡献估计问题，提出边界自适应的步骤级归因框架。该框架依据关键经验观察分两阶段估计各步骤对整体任务表现的贡献，能够辅助定位并改进技能中的低效或有害步骤。这为生成技能与提示的质量评估提供了可计算的归因指标。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "evaluation criteria and metrics for measuring the quality of generated skills and prompts",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2609.00549v1",
+      "source": "arxiv",
+      "title": "Skill Following: Evaluating Actual Skill Use in Retrieval-Enabled LLM Agents",
+      "abstract": "Large Language Model (LLM) agents increasingly rely on external skills, yet standard evaluations obscure whether retrieving these skills actually helps. Aggregate metrics often compare retrieved versus non-retrieved tasks, introducing severe selection bias and failing to isolate the true effect of skill use. To measure this actual-use capability-which we formalize as Skill Following (SF)-we introduce the Retrieval-Invoked Actual-Use Effect (RAE). RAE computes the same-task outcome difference between matched skill-enabled and skill-disabled executions, conditioned exclusively on tasks where the agent actively retrieved a skill. Evaluating 17 LLMs across coding and mathematical domains, we uncover a stark evaluation paradox: models frequently show positive aggregate retrieval lift but negative RAE. On MBPP+, multiple models that appear to benefit system-wide actually harm their own performance on the exact tasks where retrieval occurred. These findings demonstrate that aggregate averages can create a misleading illusion of tool-use proficiency, whereas RAE directly measures whether the retrieval-to-answer pipeline genuinely rescues more outcomes than it harms.",
+      "authors": [
+        "Seonghyeon Cho",
+        "Chanjun Park"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-09-01T01:33:57+00:00",
+      "link": "https://arxiv.org/pdf/2609.00549v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "proposes Retrieval-Invoked Actual-Use Effect (RAE) to measure whether retrieved skills truly improve LLM agent outcomes; relates to evaluation metrics for skill value",
+      "llm_evidence_cn": "针对技能检索是否真正有用提出RAE评测指标，在技能使用效果粒度上提供评价方法，可服务于生成技能质量的度量",
+      "llm_evidence": "针对技能检索是否真正有用提出RAE评测指标，在技能使用效果粒度上提供评价方法，可服务于生成技能质量的度量",
+      "canonical_evidence": "针对技能检索是否真正有用提出RAE评测指标，在技能使用效果粒度上提供评价方法，可服务于生成技能质量的度量",
+      "llm_tldr_en": "Skill retrieval might not actually help LLM agents. The paper formalizes Skill Following and introduces RAE, comparing same-task outcomes with skill enabled versus disabled to isolate the true effect of using a retrieved skill, revealing evaluation bias.",
+      "llm_tldr_cn": "现有评测往往不能说明检索到的外部技能是否真正帮助了大语言模型智能体，聚合指标还会引入选择偏差。本文将这种能力形式化为技能跟随能力，并提出检索调用的实际使用效应（RAE），通过配对技能启用与禁用的执行结果来隔离技能的真实效果。作者在17个大模型、编码与数学任务上的评测揭示了常用评测中的悖论，表明聚合指标可能掩盖技能的实际作用。该方法为技能与提示的实用质量评估提供了去偏的新指标与思路。",
+      "llm_tldr": "现有评测往往不能说明检索到的外部技能是否真正帮助了大语言模型智能体，聚合指标还会引入选择偏差。本文将这种能力形式化为技能跟随能力，并提出检索调用的实际使用效应（RAE），通过配对技能启用与禁用的执行结果来隔离技能的真实效果。作者在17个大模型、编码与数学任务上的评测揭示了常用评测中的悖论，表明聚合指标可能掩盖技能的实际作用。该方法为技能与提示的实用质量评估提供了去偏的新指标与思路。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "evaluation criteria and metrics for measuring the quality of generated skills and prompts",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2608.14036v1",
+      "source": "arxiv",
+      "title": "Demystifying Agent Skills: Why They Work-Until They Don't",
+      "abstract": "Skills have emerged as a practical and effective approach for enhancing LLM agents at inference time through structured packages of knowledge. However, existing evaluations largely measure whether skills improve aggregated task success, leaving a more fundamental question underexplored: \\emph{\\textbf{When do skills help, why do they work, and where do they fail?}} Through controlled experiments across various benchmarks, agent harnesses and LLMs, we isolate the effects of representation, outcome annotation, retrieval difficulty, and cross-framework robustness of skills. To further answer this question, we design a contrastive study that combines controlled quantitative experiments with paired trajectory analysis. We normalize 8,135 trial records from controlled experiments and retain 238 valid unique labels from 240 open-coded records. We consolidate these observations into a taxonomy of three high-level categories and twelve skill-use modes: skills work when noisy trajectories become procedural anchors that stabilize execution. Skills improve over Workflow Memory by 6.06 points in matched comparisons. Procedural anchoring accounts for 65.7\\% of skill cases, versus 4.5\\% for explicit knowledge injection, showing that skills stabilize action rather than inject missing facts. Retrieval is a separate bottleneck: as pools grow from 5 to 100, actual-use precision falls from 29.6\\% to 3.3\\%. Confusable distractors impair offline identification, yet downstream success remains stable; exact ground-truth invocation is neither sufficient nor necessary. Skills fail under brittle assumptions, incompatible contexts, or insufficient adaptation. These findings move evaluation beyond aggregate success rates and guide reliable self-evolving agents.",
+      "authors": [
+        "Zhiyuan Jiang",
+        "Fangrui Huang",
+        "Hanwen Xing",
+        "Xander Wu",
+        "Yipeng Gao",
+        "Rui Cao",
+        "Mengdi Wang",
+        "Shilong Liu",
+        "Yijiang Li"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-14T07:26:38+00:00",
+      "link": "https://arxiv.org/pdf/2608.14036v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Controlled study isolating cross-framework robustness and failure conditions of agent skills across benchmarks, harnesses and LLMs",
+      "llm_evidence_cn": "通过受控实验分离跨框架鲁棒性等影响因素，为技能评估与跨基座模型鲁棒性提供实证依据",
+      "llm_evidence": "通过受控实验分离跨框架鲁棒性等影响因素，为技能评估与跨基座模型鲁棒性提供实证依据",
+      "canonical_evidence": "通过受控实验分离跨框架鲁棒性等影响因素，为技能评估与跨基座模型鲁棒性提供实证依据",
+      "llm_tldr_en": "This paper empirically examines when, why, and where agent skills work, using controlled experiments across benchmarks, harnesses and LLMs to isolate effects of representation, annotation, retrieval difficulty, and cross-framework robustness, normalizing 8,135 trials.",
+      "llm_tldr_cn": "现有评测多关注技能是否提升整体任务成功率，却很少系统分析技能何时有效、为何有效、何处失效。论文设计受控实验与成对轨迹分析，跨多个基准、智能体框架和LLM，分离表征方式、结果标注、检索难度和跨框架鲁棒性等因素的影响。对8,135条受控试验记录进行归一化分析，揭示了技能在特定条件下失效的关键原因。该研究为智能体技能的设计、评测以及跨基座模型的可迁移性提供了重要的实证指导。",
+      "llm_tldr": "现有评测多关注技能是否提升整体任务成功率，却很少系统分析技能何时有效、为何有效、何处失效。论文设计受控实验与成对轨迹分析，跨多个基准、智能体框架和LLM，分离表征方式、结果标注、检索难度和跨框架鲁棒性等因素的影响。对8,135条受控试验记录进行归一化分析，揭示了技能在特定条件下失效的关键原因。该研究为智能体技能的设计、评测以及跨基座模型的可迁移性提供了重要的实证指导。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "portability and robustness of prompts across different foundation models and model versions",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2608.22014v1",
+      "source": "arxiv",
+      "title": "DynaContext: Self-Improving Dynamic Contextualization of Optimized Prompts for Heterogeneous Parameter Extraction",
+      "abstract": "Automated prompt and skill optimization typically produces a single static instruction that is reused across inference instances until the next optimization cycle. However, this approach cannot adapt when the required context, constraints, and evidence vary from one instance to another. For instance, parameter extraction from electronic component descriptions breaks this assumption: resistors, capacitors, transistors, and connectors require different fields, unit constraints, and demonstrations, and each input provides a different evidence state. We introduce DynaContext, a framework that combines an offline-optimized extraction core, learned with GEPA or SkillOpt, with inference-time contextual adaptation and validation-gated self-improvement. DynaContext routes each item through internal, external, or fallback evidence paths and composes an item-specific prompt from the core, schema, evidence, unresolved fields, and validated demonstrations. Deterministic validation and an LLM judge gate every output, uncertain cases go to human review, and only human-verified corrections enter the demonstration memory. On a single-category benchmark, average accuracy increases from 86.6% for the base prompt to 96.9% for standalone SkillOpt and 98.6% for the best DynaContext configuration. Across 850 heterogeneous gold parameter facts, average field-level F1 increases from 51.8% for an unoptimized, demonstration-free control to 59.2% with dynamic demonstrations alone, 66.9% with the optimized core alone, and 71.0% with both. Holding the model fixed, the full configuration outperforms the deployed static-prompting pipeline by 17.3 F1 points on average.",
+      "authors": [
+        "Joe Yu",
+        "Shibin Thomas Stanley Paul",
+        "Sven Mayer"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-22T15:36:12+00:00",
+      "link": "https://arxiv.org/pdf/2608.22014v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Combines offline prompt/skill optimization with inference-time dynamic contextualization, a training-free automated prompt optimization direction.",
+      "llm_evidence_cn": "将离线提示/技能优化与推理时动态上下文结合，属于免训练的自动提示优化方向。",
+      "llm_evidence": "将离线提示/技能优化与推理时动态上下文结合，属于免训练的自动提示优化方向。",
+      "canonical_evidence": "将离线提示/技能优化与推理时动态上下文结合，属于免训练的自动提示优化方向。",
+      "llm_tldr_en": "Static optimized instructions fail when per-instance context varies. DynaContext couples an offline optimization core (GEPA or SkillOpt) with inference-time contextual adaptation, dynamically supplying fields, constraints, and evidence for heterogeneous parameter extraction. Demonstrates automatic prompt optimization that stays responsive instance-wise without fine-tuning.",
+      "llm_tldr_cn": "自动提示与技能优化通常生成一条被所有推理实例复用的静态指令，难以应对实例间上下文与约束的差异。DynaContext将离线优化得到的抽取核心（如GEPA或SkillOpt）与推理时的上下文动态适配相结合，按输入的元器件描述调整字段、单位约束与示例。该方法可提升异构参数抽取的准确性与适用性。它展示了在免训练前提下让优化提示随实例自适应的可行思路。",
+      "llm_tldr": "自动提示与技能优化通常生成一条被所有推理实例复用的静态指令，难以应对实例间上下文与约束的差异。DynaContext将离线优化得到的抽取核心（如GEPA或SkillOpt）与推理时的上下文动态适配相结合，按输入的元器件描述调整字段、单位约束与示例。该方法可提升异构参数抽取的准确性与适用性。它展示了在免训练前提下让优化提示随实例自适应的可行思路。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic optimization of prompts or instructions without fine tuning a model",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2608.19013v1",
+      "source": "arxiv",
+      "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+      "abstract": "Continual learning has largely been model-centric, treating model parameters as the state that changes with sequential experience. Modern agents can also adapt through a harness of prompts, memories, tools, skills, and routing rules. Because these contents jointly shape later execution, a harness update can disrupt previously reliable behavior even when the model is frozen. This raises a new question: how can an agent continually improve its state outside the model while retaining behavior acquired earlier? We formulate Harness Continual Learning (HCL), a new continual learning paradigm in which the harness evolves around a frozen foundation model, and define the resulting loss of earlier behavior as harness-level forgetting. We instantiate HCL with four execution-facing components: the Task Interface, Experience Memory, Capability Map, and Adaptive Router. We further introduce guarded harness evolution to separate update generation from state commitment. A Continual Optimizer proposes candidate harnesses from post-execution feedback, and a Continual Evaluator commits the resulting candidate harness only after checking current improvement, historical retention, and validity. Experiments on textual reasoning, multimodal perception, and open-world interaction demonstrate capability accumulation and failure recovery, with relative gains exceeding 10% over corresponding baselines in multiple settings. Component ablations assess the contribution of each harness component, while controlled retention sweeps reveal measurable harness-level forgetting and show that the stability--plasticity trade-off can be explicitly adjusted.",
+      "authors": [
+        "Borui Kang",
+        "Jinrui Gu",
+        "Junhan Lv",
+        "Wenbin Li",
+        "Lei Wang",
+        "Yang Gao"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-08-19T15:12:31+00:00",
+      "link": "https://arxiv.org/pdf/2608.19013v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "harness of prompts, memories, tools and skills evolves around a frozen foundation model; proposes Harness Continual Learning and harness-level forgetting for continual skill improvement",
+      "llm_evidence_cn": "提出驾驭持续学习，让提示、技能等外部组件在冻结基座模型下持续演化，并刻画外部状态更新导致的旧能力遗忘，契合智能体技能自动进化需求",
+      "llm_evidence": "提出驾驭持续学习，让提示、技能等外部组件在冻结基座模型下持续演化，并刻画外部状态更新导致的旧能力遗忘，契合智能体技能自动进化需求",
+      "canonical_evidence": "提出驾驭持续学习，让提示、技能等外部组件在冻结基座模型下持续演化，并刻画外部状态更新导致的旧能力遗忘，契合智能体技能自动进化需求",
+      "llm_tldr_en": "Instead of only updating model weights, agents adapt via prompts, memories, tools, skills and routing rules. Updating this harness can break previous behavior; HCL formalizes continual improvement of such external state and harness-level forgetting.",
+      "llm_tldr_cn": "传统持续学习只关注模型参数更新，但其实智能体还可通过提示、记忆、工具、技能等驾驭组件不断适应环境；更新这些外部状态同样会破坏之前可靠的行为，造成所谓的驾驭级遗忘。本文提出驾驭持续学习（HCL）范式，在冻结基础模型的前提下持续演化驾驭组件，并据此定义与度量新出现的遗忘问题。这为AI Agent不修改模型参数而仅靠提示与技能等外部资产的逐步自进化提供了通用研究框架，对该领域的后续方法与评测有重要启示。",
+      "llm_tldr": "传统持续学习只关注模型参数更新，但其实智能体还可通过提示、记忆、工具、技能等驾驭组件不断适应环境；更新这些外部状态同样会破坏之前可靠的行为，造成所谓的驾驭级遗忘。本文提出驾驭持续学习（HCL）范式，在冻结基础模型的前提下持续演化驾驭组件，并据此定义与度量新出现的遗忘问题。这为AI Agent不修改模型参数而仅靠提示与技能等外部资产的逐步自进化提供了通用研究框架，对该领域的后续方法与评测有重要启示。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2608.20274v1",
+      "source": "arxiv",
+      "title": "Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents",
+      "abstract": "Large language model (LLM) agents can induce skills from completed tasks and reuse them later to grow more capable with experience. In practice, induced skills may transfer unreliably and can even harm the agent that retrieves them. When agent-induced skills transfer reliably across tasks remains an open question. We conduct a comprehensive and controlled study of how the way skills are induced shapes their transfer across tasks. Specifically, we compare task-level with subtask-level skill induction and text with code skill formats, the two axes along which existing methods differ. Task-level skills mostly reduce the agent's performance below its no-memory baseline while subtask-level skills raise it above on average, and text skills transfer better than code skills. To further understand our findings, we examine two complementary properties of the induced skills: specificity, which measures how closely a skill matches real tasks, and abstractness, which measures how evenly its relevance spreads across tasks. Neither property alone predicts task success, but their combined effect does, which we propose as a skill utility score. The score correlates consistently with task success when skills are transferred, and subtask-level and text skills score higher. Computing skill utility only needs the skills and task descriptions but not any task execution, so our score serves as a practical diagnostic of a skill memory before any new task runs.",
+      "authors": [
+        "Yiyang Feng",
+        "Biddut Sarker Bijoy",
+        "Niranjan Balasubramanian",
+        "Jiawei Zhou"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-08-20T17:12:08+00:00",
+      "link": "https://arxiv.org/pdf/2608.20274v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Investigates automatic ways for agents to induce and reuse skills from completed tasks; compares induction granularity and skill format for reliable transfer without manual coding.",
+      "llm_evidence_cn": "研究智能体从已完成任务自动归纳并复用技能的方式，比较归纳粒度与技能格式，寻求无需人工编码的可靠技能自优化。",
+      "llm_evidence": "研究智能体从已完成任务自动归纳并复用技能的方式，比较归纳粒度与技能格式，寻求无需人工编码的可靠技能自优化。",
+      "canonical_evidence": "研究智能体从已完成任务自动归纳并复用技能的方式，比较归纳粒度与技能格式，寻求无需人工编码的可靠技能自优化。",
+      "llm_tldr_en": "LLM agents induce skills from completed tasks but transfer may be unreliable. This controlled study compares task-level vs subtask-level induction and text vs code formats; subtask-level and text skills transfer better, guiding reliable self-improvement.",
+      "llm_tldr_cn": "LLM智能体能够从已完成任务中归纳技能并随经验增长而提升，但归纳出的技能迁移不稳定甚至有害。论文对技能归纳的两种轴线（任务级对子任务级、文本格式对代码格式）进行受控比较，发现任务级技能多数低于无记忆基线，而子任务级技能平均能提升表现，文本格式比代码更易迁移。这些结果为智能体在无人工编写技能条件下设计可靠的技能归纳与复用机制提供了明确依据。",
+      "llm_tldr": "LLM智能体能够从已完成任务中归纳技能并随经验增长而提升，但归纳出的技能迁移不稳定甚至有害。论文对技能归纳的两种轴线（任务级对子任务级、文本格式对代码格式）进行受控比较，发现任务级技能多数低于无记忆基线，而子任务级技能平均能提升表现，文本格式比代码更易迁移。这些结果为智能体在无人工编写技能条件下设计可靠的技能归纳与复用机制提供了明确依据。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "What are effective approaches for self optimization of agent skills without human manual coding?",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2608.23417v1",
+      "source": "arxiv",
+      "title": "SkillAlchemy: Open-World Agent Skill Creation",
+      "abstract": "Agent skills are reusable procedural artifacts that extend language agents with specialized workflows, tool conventions, and domain behaviors at inference time. However, creating reliable skills still depends largely on human authorship, model priors, or execution traces. These sources are often unavailable for unfamiliar tasks, suggesting the need to create skills from open-world materials. In this paper, we study open-world skill creation: given an underspecified skill brief and a source-access specification, a creator must discover behavior-relevant requirements omitted by the brief and determine how broadly each source-derived procedure is justified. We propose SkillAlchemy, an admission-centered framework for source-grounded skill creation. SkillAlchemy identifies implicit requirements through contrastive evidence, admits candidate procedures based on evidence-supported scope, and compiles the admitted content into a grammar-guided skill package. Extensive experiments across 87 SkillsBench v1.1 tasks demonstrate that SkillAlchemy improves pass rate over no-skill execution by 19.9 percentage points and the strongest automated baseline by 8.6 percentage points, while achieving performance comparable to human-curated skills.",
+      "authors": [
+        "Hengjun Wang",
+        "Shuyue Wei",
+        "Boyi Liu",
+        "Jun Yang",
+        "Yongxin Tong"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-08-24T15:58:57+00:00",
+      "link": "https://arxiv.org/pdf/2608.23417v1",
+      "tags": [
+        "keyword:skill-evo",
+        "query:skill-evo"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Automatic agent skill creation from open-world source material, reducing reliance on manual coding and addressing skill addition/evolution.",
+      "llm_evidence_cn": "面向开放世界素材自动发现并创建智能体技能，可减少对人工编写或执行轨迹的依赖。",
+      "llm_evidence": "面向开放世界素材自动发现并创建智能体技能，可减少对人工编写或执行轨迹的依赖。",
+      "canonical_evidence": "面向开放世界素材自动发现并创建智能体技能，可减少对人工编写或执行轨迹的依赖。",
+      "llm_tldr_en": "SkillAlchemy studies open-world skill creation: creating reliable agent skills from underspecified skill briefs plus source-access specs, using an admission-centered framework to discover hidden requirements and bound source-derived procedures.",
+      "llm_tldr_cn": "现有智能体技能可靠创建依赖人工编写、模型先验或执行轨迹，而陌生任务常缺乏这些来源。SkillAlchemy定义开放世界技能创建问题，要求在欠定义技能简介与来源访问规范下，发现简介遗漏的行为相关需求并判断来源程序的适用边界。其采用准入为中心的来源接地框架来支持这一过程，为智能体在缺少既有经验时自动新增技能提供可行方案。",
+      "llm_tldr": "现有智能体技能可靠创建依赖人工编写、模型先验或执行轨迹，而陌生任务常缺乏这些来源。SkillAlchemy定义开放世界技能创建问题，要求在欠定义技能简介与来源访问规范下，发现简介遗漏的行为相关需求并判断来源程序的适用边界。其采用准入为中心的来源接地框架来支持这一过程，为智能体在缺少既有经验时自动新增技能提供可行方案。",
+      "llm_tags": [
+        "query:skill-evo"
+      ],
+      "matched_query_tag": "query:skill-evo",
+      "matched_query_text": "automatic evolution and improvement of agent skills",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    }
+  ]
+}

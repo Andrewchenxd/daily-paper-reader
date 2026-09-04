@@ -1,0 +1,457 @@
+{
+  "date": "20260806-20260904",
+  "date_label": "2026-08-06 ~ 2026-09-04",
+  "generated_at": "2026-09-04 03:02:34 UTC",
+  "recommend_exists": true,
+  "run_count": 1,
+  "papers": [
+    {
+      "paper_id": "2608.06153v1",
+      "route": "20260806-20260904/2608.06153v1-learning-globally-reusable-skills-for-coding-agents",
+      "title": "Learning Globally Reusable Skills for Coding Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向代码智能体的自动化技能演化，通过关系图和聚类整合提升技能的全局可复用性",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.06891v1",
+      "route": "20260806-20260904/2608.06891v1-skilleval-decomposing-agent-skill-quality-into-interpretable-signals",
+      "title": "SkillEval: Decomposing Agent Skill Quality into Interpretable Signals",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "提出可解释的SkillEval框架，从SKILL.md文档固有属性分解技能质量信号，直接服务于生成技能的质量评测",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.07449v1",
+      "route": "20260806-20260904/2608.07449v1-skillprox-self-evolving-agent-skills-via-proximal-textual-gradient-descent",
+      "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "通过闭环诊断反馈与近端文本精修实现智能体技能自进化",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.08037v1",
+      "route": "20260806-20260904/2608.08037v1-skillsmith-enhancing-locally-deployed-agents-via-automatic-skill-construction-and-evolution",
+      "title": "SkillSmith: Enhancing Locally Deployed Agents via Automatic Skill Construction and Evolution",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向智能体系统自动构造并进化技能，直接命中agent技能自动演进需求。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.08677v1",
+      "route": "20260806-20260904/2608.08677v1-branch2skill-efficient-skill-evolution-through-reasoning-trees",
+      "title": "Branch2Skill: Efficient Skill Evolution Through Reasoning Trees",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "利用蒙特卡洛树搜索得到的推理树生成密集监督，从失败轨迹反馈中高效改进技能，直接回答智能体如何利用反馈自进化",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.15165v1",
+      "route": "20260806-20260904/2608.15165v1-skillcommit-evolving-agent-skills-through-behaviorally-validated-scope-expansion",
+      "title": "SkillCommit: Evolving Agent Skills through Behaviorally Validated Scope Expansion",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "自动将经验转化为行为验证的分层技能库，直接支持智能体技能演化",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.16068v1",
+      "route": "20260806-20260904/2608.16068v1-capo-constraint-aware-prompt-optimization-for-llm-agents",
+      "title": "CAPO: Constraint-Aware Prompt Optimization for LLM Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "无需微调，通过候选池改写与自适应约束加权自动优化智能体系统提示。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.16544v1",
+      "route": "20260806-20260904/2608.16544v1-vce-skill-enhancing-skill-self-evolution-with-version-change-experience",
+      "title": "VCE-Skill: Enhancing Skill Self-Evolution with Version-Change Experience",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "利用版本变更经验与轨迹反馈增强技能自进化",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.17587v1",
+      "route": "20260806-20260904/2608.17587v1-write-execute-refine-from-skill-followers-to-skill-optimizers-via-reinforcement-learning-from-execution-feedback",
+      "title": "Write, Execute, Refine: From Skill Followers to Skill Optimizers via Reinforcement Learning from Execution Feedback",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "利用执行反馈强化学习训练技能优化器，使agent技能无需人工编码即可自我改进。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.22339v1",
+      "route": "20260806-20260904/2608.22339v1-when-not-to-imitate-boundary-aware-skill-memory-for-reliable-tool-use-llm-agents",
+      "title": "When Not to Imitate: Boundary-Aware Skill Memory for Reliable Tool-Use LLM Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "提出边界感知技能记忆，引导自进化智能体安全复用成功经验而非盲目模仿",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.22610v1",
+      "route": "20260806-20260904/2608.22610v1-coalition-aware-skill-reliability-for-self-evolving-agents",
+      "title": "Coalition-Aware Skill Reliability for Self-Evolving Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "通过系统性技能库审计衡量技能是否产生正向机制贡献并揭示联盟失效，为自进化智能体技能质量与可靠性评估提供依据",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.24641v1",
+      "route": "20260806-20260904/2608.24641v1-aging-of-prompt-engineering-techniques-across-llm-versions",
+      "title": "Aging of Prompt Engineering Techniques Across LLM Versions",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "在多个同源但不同版本的LLM上复现并评测五类提示工程技巧，直接探讨更换基座模型后提示策略有效性的变化与老化",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.24747v1",
+      "route": "20260806-20260904/2608.24747v1-skillforge-evolving-verifiable-skills-for-reinforcement-learning-agents",
+      "title": "SkillForge: Evolving Verifiable Skills for Reinforcement Learning Agents",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "通过环境交互和RL持续验证、精炼并复用技能库，直接对应agent技能自动进化。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.27266v1",
+      "route": "20260806-20260904/2608.27266v1-naive-prompt-optimization-rethinking-the-need-for-complex-prompt-search",
+      "title": "Naive Prompt Optimization: Rethinking the Need for Complex Prompt Search",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "免训练、无需微调的自动提示词优化方法",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.27454v1",
+      "route": "20260806-20260904/2608.27454v1-wikiskill-compiling-agent-experience-into-persistent-knowledge-for-skill-evolution",
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "WikiSkill将执行经验沉淀为持久化wiki知识库并与技能协同进化，支持跨轮次持续改进技能，直接对应技能自动新增、修改与优化",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2609.00829v1",
+      "route": "20260806-20260904/2609.00829v1-harnessevolve-learning-from-reference-trajectories-for-reliable-agent-self-evolution",
+      "title": "HarnessEvolve: Learning from Reference Trajectories for Reliable Agent Self-Evolution",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "围绕智能体从环境反馈中自进化其prompt、技能与工具，直接契合技能自我改进。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2609.02094v1",
+      "route": "20260806-20260904/2609.02094v1-maskills-continual-skills-optimization-for-multi-agent-llm-systems",
+      "title": "MASkills: Continual Skills Optimization for Multi-Agent LLM Systems",
+      "section": "deep",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 9.0,
+      "evidence": "面向技能库的持续学习优化，实现智能体技能在交互经验中的自动演化。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.06880v1",
+      "route": "20260806-20260904/2608.06880v1-skillaligner-treating-retrieved-skills-as-adaptable-drafts-at-execution-time",
+      "title": "SkillAligner: Treating Retrieved Skills as Adaptable Drafts at Execution Time",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "提出免训练的执行期技能自适应框架，将检索技能视为草稿并自动优化为与任务匹配的指令",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.11338v1",
+      "route": "20260806-20260904/2608.11338v1-better-faster-stronger-programmatic-skill-learning-best-reduces-agent-cost",
+      "title": "Better, Faster, Stronger: Programmatic Skill Learning Best Reduces Agent Cost",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "主张将技能视为程序能显著降低Agent成本并支持推理时增量发现程序，是无需人工编码的技能自优化路线",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.14036v1",
+      "route": "20260806-20260904/2608.14036v1-demystifying-agent-skills-why-they-work-until-they-dont",
+      "title": "Demystifying Agent Skills: Why They Work-Until They Don't",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "通过受控实验分离跨框架鲁棒性等影响因素，为技能评估与跨基座模型鲁棒性提供实证依据",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.19013v1",
+      "route": "20260806-20260904/2608.19013v1-harness-continual-learning-continual-adaptation-beyond-model-parameters",
+      "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "提出驾驭持续学习，让提示、技能等外部组件在冻结基座模型下持续演化，并刻画外部状态更新导致的旧能力遗忘，契合智能体技能自动进化需求",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.20274v1",
+      "route": "20260806-20260904/2608.20274v1-break-it-down-pass-it-on-cross-task-skill-transfer-in-llm-agents",
+      "title": "Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "研究智能体从已完成任务自动归纳并复用技能的方式，比较归纳粒度与技能格式，寻求无需人工编码的可靠技能自优化。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.23417v1",
+      "route": "20260806-20260904/2608.23417v1-skillalchemy-open-world-agent-skill-creation",
+      "title": "SkillAlchemy: Open-World Agent Skill Creation",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 8.0,
+      "evidence": "面向开放世界素材自动发现并创建智能体技能，可减少对人工编写或执行轨迹的依赖。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.09168v1",
+      "route": "20260806-20260904/2608.09168v1-from-relevance-to-execution-utility-reward-aware-dynamic-execution-gating-for-skill-based-llm-agents",
+      "title": "From Relevance to Execution Utility: Reward-Aware Dynamic Execution Gating for Skill-Based LLM Agents",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "用低成本代理模型预测检索技能包的执行效用，为判断技能质量与是否值得执行提供评估准则",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.13173v1",
+      "route": "20260806-20260904/2608.13173v1-skillshapley-boundary-adaptive-shapley-valuation-for-skill-step-attribution-in-llm-agents",
+      "title": "SkillShapley: Boundary-Adaptive Shapley Valuation for Skill Step Attribution in LLM Agents",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "提出基于Shapley值的技能步骤级归因，为技能与提示的步骤质量和贡献评估提供量化指标。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.22014v1",
+      "route": "20260806-20260904/2608.22014v1-dynacontext-self-improving-dynamic-contextualization-of-optimized-prompts-for-heterogeneous-parameter-extraction",
+      "title": "DynaContext: Self-Improving Dynamic Contextualization of Optimized Prompts for Heterogeneous Parameter Extraction",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 7.0,
+      "evidence": "将离线提示/技能优化与推理时动态上下文结合，属于免训练的自动提示优化方向。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2608.08303v1",
+      "route": "20260806-20260904/2608.08303v1-query-only-backdoor-attacks-on-self-evolving-skills-via-trajectory-poisoning",
+      "title": "Query-Only Backdoor Attacks on Self-Evolving Skills via Trajectory Poisoning",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "围绕从执行轨迹自动构建与更新技能的自进化技能系统，揭示查询级轨迹投毒可间接篡改技能演化。",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    },
+    {
+      "paper_id": "2609.00549v1",
+      "route": "20260806-20260904/2609.00549v1-skill-following-evaluating-actual-skill-use-in-retrieval-enabled-llm-agents",
+      "title": "Skill Following: Evaluating Actual Skill Use in Retrieval-Enabled LLM Agents",
+      "section": "quick",
+      "tags": [
+        {
+          "kind": "query",
+          "label": "skill-evo"
+        }
+      ],
+      "score": 6.0,
+      "evidence": "针对技能检索是否真正有用提出RAE评测指标，在技能使用效果粒度上提供评价方法，可服务于生成技能质量的度量",
+      "first_seen_at": "2026-09-04 03:02:34 UTC",
+      "updated_at": "2026-09-04 03:02:34 UTC"
+    }
+  ]
+}
